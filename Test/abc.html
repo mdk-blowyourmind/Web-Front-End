@@ -3,69 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
+    <title>sub menu</title>
+    <style type="text/css">
+        .menu {
+            list-style: none;
+            padding: 0;
+            background: pink;
+            display: inline-block;
+            position: relative;
+        }
+
+        .menu:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .menu>li {
+            float: left;
+            width: 100px;
+            padding: 10px;
+            border-left: 1px gray solid;
+            text-align: center;
+        }
+
+        .menu>li:first-child {
+            border-left: none;
+        }
+
+        .item:hover {
+            background: gray;
+            color: white;
+        }
+
+        .item:hover .sub-menu {
+            display: block;
+            color: blue;
+        }
+
+        .sub-menu {
+            list-style: none;
+            padding: 0;
+            position: absolute;
+            background: yellow;
+            width: 120px;
+            top: 100%;
+            display: none;
+        }
+
+        .sub-menu li {
+            padding: 10px 0;
+            border-bottom: 1px gray dotted;
+        }
+
+        .sub-menu li:last-child {
+            border: none;
+        }
+    </style>
 </head>
 <body>
-    <form action="">
-        <table bgcolor="lavender" width="80%" height="500px" align="center">
-            <tr>
-                <td colspan="2" align="center" bgcolor="orange">
-                    ZENT GROUP
-                </td>
-            </tr>
-            <tr>
-                <td width="50%">Họ và tên</td>
-                <td>
-                    <input type="text" name="name" placeholder="Họ và tên">
-                </td>
-            </tr>
-            <tr>
-                <td>Email</td>
-                <td>
-                    <input type="email" name="email" placeholder="Email">
-                </td>
-            </tr>
-            <tr>
-                <td>Số điện thoại</td>
-                <td>
-                    <input type="text" name="phone" placeholder="Số điện thoại">
-                </td>
-            </tr>
-            <tr>
-                <td>Giới tính</td>
-                <td>
-                    <input type="radio" name="gender"> Nam
-                    <input type="radio" name="gender"> Nữ
-                    <input type="radio" name="gender"> Khác
-                </td>
-            </tr>
-            <tr>
-                <td>Kỹ năng</td>
-                <td>
-                    <input type="checkbox"> HTML
-                    <input type="checkbox"> CSS
-                    <input type="checkbox"> JS
-                </td>
-            </tr>
-            <tr>
-                <td>Ngày sinh</td>
-                <td>
-                    <input type="date" name="birthday">
-                </td>
-            </tr>
-            <tr>
-                <td>Miêu tả</td>
-                <td>
-                    <textarea name="description" cols="30" rows="10"></textarea>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2" align="center" bgcolor="orange">
-                    <button>Submit</button>
-                    <button>Reset</button>
-                </td>
-            </tr>
-        </table>
-    </form>
+    <ul class="menu">
+        <li class="item">Menu 1</li>
+        <li class="item">Menu 2</li>
+        <li class="item">
+            Menu 3
+            <ul class="sub-menu">
+                <li>sub menu 1</li>
+                <li>sub menu 2</li>
+                <li>sub menu 3</li>
+            </ul>
+        </li>
+        <li class="item">Menu 4</li>
+    </ul>
 </body>
 </html>

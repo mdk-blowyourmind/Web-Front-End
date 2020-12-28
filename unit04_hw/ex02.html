@@ -1,11 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sub menu</title>
+    <style type="text/css">
+
+    	*{
+    		font-family: freestyle script ;
+    		font-size: 110%;
+    		color: white;
+    	}
+        .menu {
+            list-style: none;
+            padding: 0;
+            background: darkcyan;
+            display: inline-block;
+            position: relative;
+        }
+
+        .menu:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .menu>li {
+            float: left;
+            width: 100px;
+            padding: 10px;
+            border-left: 1px gray solid;
+            text-align: center;
+        }
+
+        .menu>li:first-child {
+            border-left: none;
+        }
+
+        .item:hover {
+            background: gray;
+            color: white;
+        }
+
+        .item:hover .sub-menu {
+            display: block;
+            color: blue;
+        }
+
+        .sub-menu {
+            list-style: none;
+            padding: 0;
+            position: absolute;
+            background: yellow;
+            width: 120px;
+            top: 100%;
+            display: none;
+        }
+
+        .sub-menu li {
+            padding: 10px 0;
+            border-bottom: 1px gray dotted;
+        }
+
+        .sub-menu li:last-child {
+            border: none;
+        }
+    </style>
 </head>
 <body>
-	
+    <ul class="menu">
+        <li class="item">24h</li>
+        <li class="item">Menu 2</li>
+        <li class="item">
+            Menu 3
+            <ul class="sub-menu">
+                <li>sub menu 1</li>
+                <li>sub menu 2</li>
+                <li>sub menu 3</li>
+            </ul>
+        </li>
+        <li class="item">Menu 4</li>
+    </ul>
 </body>
 </html>

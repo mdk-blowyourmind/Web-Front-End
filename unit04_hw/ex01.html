@@ -3,9 +3,254 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Bai 1</title>
+	<style>
+		body{
+			background-image: url('images/bg.jpg');
+
+		}
+		h1	{
+			font-size: 150%
+		}
+		* {
+			font-family: freestyle script ;
+			font-size: 110%;
+
+		}
+
+		.container {
+			width: 1000px ;
+			height: 750px ;
+			border: 0px black solid ;
+			
+			display: inline-block;
+			position: relative;
+			left: 20px ;
+			top: 20px ;
+		}
+
+		.container:after {
+			content: "";
+			display: block ;
+			clear: both ;
+		}
+
+		p {
+			position: relative;
+			padding: 0px ;
+			margin: 0px ;
+		}
+		p:hover {
+			color: crimson ;
+
+		}
+
+		.work-step {
+    background-color: white;
+    color: black ;
+    
+    
+    border-radius: 20px;
+    height: 50px;
+    width: 50px;
+    
+    float: left;
+    
+    
+    
+    z-index: 1;
+    
+    margin: 0px ;
+    padding: 0px ;
+
+}
+
+		div {
+			position: relative;
+		}
+
+		.work-step:hover {
+			color: crimson ;
+			background: crimson ;
+
+			
+		}
+
+
+	</style>
 </head>
 <body>
-	
+	<form action="">
+		
+			<div class="container">
+				<div  style="float: left; border: 0px black solid;width: 100%
+				">
+					<div style="display: inline-block; display: inline-block; float: left;"><b>Zent Group</b></div>
+					<div align="right" style="background-color: azure; border:1px solid azure; border-radius: 10px;display: inline-block; float: right;"><p>Sign In</p></div>
+					<div style="display: inline-block; float: right;padding-right: 20px;"><p>Sign up</p></div>
+					<div style="display: inline-block; float: right;padding-right: 20px;"><p>About</p></div>
+				</div>
+
+				<div style="border: 0px black solid; left:20px; top:50px; width: 800px; height: 650px;" >
+					<div style="float: left; border: 0px black solid">
+						<div style="display: block;"><p>Home</p></div>
+						<div style="display: block;"><p>Tab Galery</p></div>
+						<div style="display: block;"><p>Create Tab</p></div>
+						<div style="display: block;"><p>Favorates</p></div>
+						<div style="display: block;"><p>Tech News</p></div>
+						<div style="display: block;"><p>Travel</p></div>
+						<div style="display: block;"><p>Photograpthy</p></div>
+						<div style="display: block;"><p>Finance World</p></div>
+						<div style="display: block;"><p>Movies</p></div>
+						<div style="display: block;"><p>Cooking</p></div>
+						<div style="display: block;"><p>Fashion</p></div>
+					</div>
+
+					<div class="work-step" style="width: 200px; height: 200px; background-image: url('images/ip.jpg');
+    					background-repeat: no-repeat; left: 70px ;
+    					background-attachment: all;
+    					background-size: 100% 100%;border: 1px azure solid ;  ">
+    					<div style="overflow: auto; background-color: white; border-top-left-radius: 20px; border-top-right-radius: 20px;
+    					width: 100%;  margin-left: 0px; margin-right: 0px;margin: 0px; padding: 0px;font-size: 80%;text-align: center; 
+    					">
+    						Tech News
+    					</div>
+
+    					<div style="text-align: center; font-size: 50%;border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;
+    					width: 100%; position: absolute; bottom: 0px; color: white;background-color: gray; 
+    					">
+    						ZentPhone by Zent Group
+    					</div>
+					</div>
+
+					<div class="work-step" style="width: 200px; height: 200px; background-image: url('images/travel.jpg'); 
+    					background-repeat: no-repeat;
+    					background-attachment: all;
+    					background-size: 100% 100%; left: 80px; overflow: all; border: 1px azure solid ;">
+    					<div style="overflow: auto; background-color: white; border-top-left-radius: 20px; border-top-right-radius: 20px;
+    					width: 100%;  margin-left: 0px; margin-right: 0px;margin: 0px; padding: 0px;font-size: 80%;text-align: center;
+    					">
+    						Travel
+    					</div>
+
+    					<div style="text-align: center; font-size: 50%;border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;
+    					width: 100%; position: absolute; bottom: 0px; color: white;background-color: gray; 
+    					">
+    						Do your best - The rest will come 
+    					</div>
+					</div>
+
+					<div class="work-step" style="width: 200px; height: 200px; background-image: url('images/photo.jpg'); 
+    					background-repeat: no-repeat;
+    					background-attachment: all; border: 1px azure solid ;
+    					background-size: 100% 100%; left: 90px; overflow: all; ">
+    					<div style="overflow: auto; background-color: white; border-top-left-radius: 20px; border-top-right-radius: 20px;
+    					width: 100%;  margin-left: 0px; margin-right: 0px; padding: 0px;font-size: 80%;text-align: center;
+    					">
+    						Photography
+    					</div>
+
+    					<div style="text-align: center; font-size: 50%;border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;
+    					width: 100%; position: absolute; bottom: 0px; color: white;background-color: gray; 
+    					">
+    						Take a shot ! A Pulitzer price is waiting for you
+    					</div>
+					</div>
+
+					<div class="work-step" style="width: 200px; height: 200px; background-image: url('images/finance.jpg'); 
+    					background-repeat: no-repeat;
+    					background-attachment: all;
+    					background-size: 100% 100%; left: 70px; top: 10px; overflow: all;border: 1px azure solid ; ">
+    					<div style="overflow: auto; background-color: white; border-top-left-radius: 20px; border-top-right-radius: 20px;
+    					width: 100%;  margin-left: 0px; margin-right: 0px; padding: 0px;font-size: 80%;text-align: center;
+    					">
+    						Finance World 
+    					</div>
+
+    					<div style="text-align: center; font-size: 50%;border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;
+    					width: 100%; position: absolute; bottom: 0px; color: white;background-color: gray; 
+    					">
+    						Gold ? Please dont chase it. What about dollar? Keep calm!
+    					</div>
+					</div>
+
+					<div class="work-step" style="width: 200px; height: 200px; background-image: url('images/movie.jpg'); 
+    					background-repeat: no-repeat; border: 1px azure solid ;
+    					background-attachment: all;
+    					background-size: 100% 100%; left: 80px; top: 10px; overflow: all; ">
+    					<div style="overflow: auto; background-color: white; border-top-left-radius: 20px; border-top-right-radius: 20px;
+    					width: 100%;  margin-left: 0px; margin-right: 0px; padding: 0px;font-size: 80%;text-align: center;
+    					">
+    						Movies 
+    					</div>
+
+    					<div style="text-align: center; background-color: gray; font-size: 50%;border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;
+    					width: 100%; position: absolute; bottom: 0px; color: white;
+    					">
+    						Batman the rising is released in October
+    					</div>
+					</div>
+
+					<div class="work-step" style="width: 200px; height: 200px; background-image: url('images/cooking.jpg'); 
+    					background-repeat: no-repeat;
+    					background-attachment: all;
+    					background-size: 100% 100%; left: 90px; top: 10px; overflow: all;border: 1px azure solid ; ">
+    					<div style="overflow: auto; background-color: white; border-top-left-radius: 20px; border-top-right-radius: 20px;
+    					width: 100%;  margin-left: 0px; margin-right: 0px; padding: 0px;font-size: 80%;text-align: center;
+    					">
+    						Cooking 
+    					</div>
+
+    					<div style="text-align: center; background-color: gray; font-size: 50%;border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;
+    					width: 100%; position: absolute; bottom: 0px; color: white;
+    					">
+    						How to cook spaghetti? Just click and taste
+    					</div>
+					</div>
+
+					<div class="work-step" style="width: 200px; height: 200px; background-image: url('images/fashion.jpg'); 
+    					background-repeat: no-repeat;
+    					background-attachment: all;
+    					background-size: 100% 100%; left: 70px; top: 20px; overflow: all; border: 1px azure solid ;">
+    					<div style="overflow: auto; background-color: white; border-top-left-radius: 20px; border-top-right-radius: 20px;
+    					width: 100%;  margin-left: 0px; margin-right: 0px; padding: 0px;font-size: 80%;text-align: center;
+    					">
+    						Fashion 
+    					</div>
+
+    					<div style="text-align: center; background-color: gray; font-size: 50%;border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;
+    					width: 100%; position: absolute; bottom: 0px; color: white;
+    					">
+    						London fashion week with collection of Zent Group and YellowSipMan
+    					</div>
+					</div>
+
+
+					
+
+					<div style="content: " ";
+							display: block ;
+							clear: both ;">
+						
+					</div>
+
+
+
+				</div>
+
+				
+			</div>
+			<div style="bottom: 0px;float: left; border: 0px solid black; left: 50px">
+					<div style="display: inline-block;font-size: 90%">Copyright @ 2015 Zent Group </div>
+					<div style="display: inline-block;font-size: 90%;left: 30px; color: coral; text-decoration: underline;"><p>About</p> </div>
+					<div style="display: inline-block;font-size: 90%;left: 30px; color: coral; text-decoration: underline;"><p>FAQ</p> </div>
+					<div style="display: inline-block;font-size: 90%;left: 30px; color: coral; text-decoration: underline;"><p>Blog</p> </div>
+					<div style="display: inline-block;font-size: 90%;left: 30px; color: coral; text-decoration: underline;"><p>Mac App </p></div>
+					<div style="display: inline-block;font-size: 90%;left: 30px; color: coral; text-decoration: underline;"><p>iPad App</p> </div>
+					<div style="display: inline-block;font-size: 90%;left: 30px; color: coral; text-decoration: underline;"><p>Term of use</p> </div>
+					<div style="display: inline-block;font-size: 90%;left: 30px; color: coral; text-decoration: underline;"><p>Private Policy</p> </div>
+				</div>
+					
+	</form>
 </body>
 </html>
