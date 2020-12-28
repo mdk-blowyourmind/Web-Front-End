@@ -1,242 +1,95 @@
-<!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<title>EX05</title>
-	<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/style.css" rel="stylesheet" type="text/css" /> 
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ek+Mukta">
+<title>Cách tạo menu trong thiết kế web bằng html css</title>
+<style>
+    
+*{margin:0;padding:0;}
+.clearfix:before,.clearfix:after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.menu-cap3{
+    width: 1200px;
+    margin: 0 auto;
+    list-style: none;
+    background-color: #e89e52;
+}
+.menu-cap3 > li{
+    float: left;
+}
+.menu-cap3 > li a{
+    font-size: 16px;
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-right: 1px solid #e0caca;
+    color: #fff;
+}
+.menu-cap3 > li:last-child a{
+    border-right: 0;
+}
+.menu-cap3 li{
+    position: relative;
+}
+.menu-cap3 li .menu-sub{
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    box-shadow: 0px 1px 8px -4px #333;
+    background-color: #e89e51;
+    display: none;
+}
+.menu-cap3 li .menu-sub ul{
+    top: 0;
+    left: 100%;
+}
+.menu-cap3 li:hover > ul{
+    display: block;
+}
+.menu-cap3 li:hover > a {
+    background: #b36c22;
+}
+</style>
 </head>
 <body>
-	<table width="800px" align="center">
-		<tr style="background-color: #424242">
-			<td colspan="3" height="40px">				
-				<table width="350px">
-					<tr>							
-						<td>
-							<a href="http://vnexpress.net/"><u style="color: blue">Trang chủ</u></a>
-						</td>
-						<td>
-							<a href="http://vnexpress.net/"><u style="color: blue">Giới thiệu</u></a>
-						</td>
-						<td>
-							<a href="http://vnexpress.net/"><u style="color: blue">Tin tức</u></a>
-						</td>
-						<td>
-							<a href="http://vnexpress.net/"><u style="color: blue">Liên hệ</u></a>
-						</td>
-						<td>
-							<a href="http://vnexpress.net/"><u style="color: blue">Diễn đàn</u></a>
-						</td>					
-					</tr>						
-				</table>
-			</td>
-		</tr>
-		<tr>
-			<td colspan="3">
-				<hr style="size: 10px; width: 100%; color: blue" />
-			</td>
-		</tr>
-		<tr>
-			<td width="150px" valign="top">
-				<table>
-					<tr height="30px">
-						<td style="background: url(./images/menu_bar.gif);" align="center">Danh mục chính</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="http://dantri.com.vn/"><font color="blue"><u>Gia công phần mềm</u></font></a>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="http://dantri.com.vn/"><font color="blue"><u>Đào tạo lập trình viên</u></font></a>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="http://dantri.com.vn/"><font color="blue"><u>Tư vấn doanh nghiệp</u></font></a>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="http://dantri.com.vn/"><font color="blue"><u>Ảnh viện áo cưới</u></font></a>
-						</td>
-					</tr>
-				</table>
-
-				<table width="150px">
-					<tr height="30px">
-						<td style="background: url(./images/menu_bar.gif); " align="center">Bài viết đáng chú ý
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="http://dantri.com.vn/"><font color=" blue"><u>Hướng dẫn đăng ký học</u></font></a>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="http://dantri.com.vn/"><font color=" blue"><u>Hình thức học tập online</u></font></a>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="http://dantri.com.vn/"><font color=" blue"><u>Cài đặt &amp; sử dụng skype</u></font></a>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="http://dantri.com.vn/"><font color=" blue"><u>Cài đặt &amp; sử dụng TeamViewer</u></font></a>
-						</td>
-					</tr>
-					<br/>
-					<tr>
-						<td>
-							<br/>
-							<img src="./images/img1.gif">
-							<img src="./images/img2.gif">
-						</td>
-					</tr>
-				</table>
-			</td>
-			<td width="500px" valign="top">
-				<form>
-					<table width="500px" style="padding: 10px;">
-						<tr>
-							<td colspan="2" align="center" width="100px" height="40px" valign="top"><b>Liên hệ</b></td>
-						</tr>
-
-						<tr>
-							<td>Tên tài khoản</td>
-							<td width="300px">
-								<input style="width: 100%" type="text" name="username" value="" placeholder="Vui lòng nhập tên tài khoản..." >
-							</td>
-						</tr>
-						<tr>
-							<td>Địa chỉ email</td>
-							<td>
-								<input style="width: 100%" type="text" name="email" value="" placeholder="Vui lòng nhập địa chỉ email...">
-							</td>
-						</tr>
-						<tr>
-							<td>Giới tính</td>
-							<td>
-								<input type="radio" name="Gender" value="Nam" checked="">Nam
-								<input type="radio" name="Gender" value="Nữ">Nữ
-							</td>
-						</tr>
-						<tr>
-							<td>Gửi tới</td>
-							<td>
-								<select name="NoiGui">
-									<option selected="">Vui lòng chọn phòng ban</option>
-									<option value="GD">Phòng Giám Đốc</option>
-									<option value="NS">Phòng Nhân sự</option>
-									<option value="HC">Phòng Hành Chính</option>
-									<option value="KT">Phòng Kế toán</option>
-									<option value="QC">Phòng Marketing</option>
-								</select>
-							</td>
-						</tr>
-						<tr>
-							<td>Nội dung liên hệ</td>
-							<td>
-								<textarea style="width: 100%; height: 100px">Nội dung bạn muốn phản ánh...</textarea>
-							</td>
-						</tr>
-						<tr>
-							<td>Lựa chọn nâng cao</td>
-							<td>
-								<input type="checkbox" name="" value="" checked="">
-							</td>
-						</tr>
-						<tr>
-							<td colspan="2">
-								<input type="button" name="" value="Gửi">
-								<input type="button" name="" value="Làm mới">
-							</td>
-						</tr>
-					</table>
-				</form>
-			</td>
-			<td width="150px" valign="top">
-				<table width="150px">
-					<tr style="background: url(./images/menu_bar.gif);" align="center" height="30px">
-						<td>Tư vấn trực tuyến</td>
-					</tr>
-					<tr>
-						<td align="center">
-							<a href="http://vnexpress.net/">
-								<img src="./images/online.gif">
-							</a>
-						</td>							
-					</tr>
-					<tr>
-						<td align="center">
-							<a href="http://dantri.com.vn/">
-								<img src="./images/offline.gif">
-							</a>
-						</td>							
-					</tr>
-				</table>
-				<br/>
-				<table width="150px">
-					<tr style="background: url(./images/menu_bar.gif);"
-					height="30px">
-						<td align="center">
-							Các bài viết mới
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="http://dantri.com.vn/" style="color: blue"><u>Htaccess trong php</u></a>
-						</td>							
-					</tr>
-					<tr>
-						<td>
-							<a href="http://dantri.com.vn/" style="color: blue"><u>HTML5 &amp; seo</u></a>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="http://dantri.com.vn/" style="color: blue"><u>Viết trang login và logout cho hệ thống</u></a>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="http://dantri.com.vn/" style="color: blue"><u>CSS nâng cao</u></a>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="http://dantri.com.vn/" style="color: blue"><u>Làm mịn da mặt với Cs3</u></a>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="http://dantri.com.vn/">
-								<img src="./images/img3.gif">
-							</a>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="http://dantri.com.vn/">
-								<img src="./images/img4.gif">
-							</a>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="http://dantri.com.vn/">
-								<img src="./images/img5.gif">
-							</a>
-						</td>
-					</tr>
-				</table>
-			</td>
-		</tr>
-		<tr>
-			<td colspan="3" height="60px" align="center" valign="middle" style="background-color: #424242; border-top: 2px solid orange;">Bản quyền thuộc về ZentGroup - Academy</td>
-		</tr>
-	</table>
+<div class="wrapper">
+    
+    <ul class="menu-cap3 clearfix" >
+      <li><a href="#" >Trang chủ</a> </li>
+      <li>
+        <a href="#" >Sản phẩm</a> 
+        <ul class="menu-sub" >
+          <li><a href="#" >Sản phẩm A</a> </li>
+          <li>
+               <a href="#" >Sản phẩm B</a> 
+               <ul class="menu-sub" >
+                   <li><a href="#" >Sản phẩm B - 1</a> </li>
+                   <li><a href="#" >Sản phẩm B - 2</a> </li>
+                   <li><a href="#" >Sản phẩm B - 3</a> </li>
+                   <li><a href="#" >Sản phẩm B - 4</a> </li>
+               </ul>
+          </li>
+          <li><a href="#" >Sản phẩm C</a> </li>
+          <li><a href="#" >Sản phẩm D</a> </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" >Về chúng tôi</a> 
+        <ul class="menu-sub" >
+          <li><a href="#" >Lịch sử hình thành</a> </li>
+          <li><a href="#" >Mục tiêu và sứ mệnh</a> </li>
+          <li><a href="#" >Đối tác</a> </li>
+        </ul>
+      </li>
+      <li><a href="#" >Chính sách</a> </li>
+      <li><a href="#" >Liên hệ</a> </li>
+    </ul>
+</div>
 </body>
 </html>
