@@ -1,0 +1,284 @@
+* {
+			margin: 0 ;
+			padding: 0;
+			box-sizing: border-box;	
+
+		}
+		.clearfix:before,.clearfix:after{
+	    content: '';
+	    display: table;
+	    clear: both;
+		}
+
+		body{
+		font-family: Arial;
+		font-size: 14px;
+		font-weight: 400;
+		}
+
+		.container{
+		width: 90%;
+		margin: 0 auto;
+		/*background-color: #d2d2d2;*/
+		}
+
+		ul, ol{
+		list-style: none;
+		padding: 0;
+	}
+		div{
+			height: 100%;
+			border: 0px red solid;
+		}
+
+		.headerTop {
+			background-color: #2b313b ;
+			color: white;
+		}
+
+		.headerTop .box{
+			float: left ;
+			width: 20%;
+			padding: 10px 15px;
+		}
+
+		.headerTop .box2{
+			font-size: 12px ;
+			width: 55% ;
+		}
+		.headerTop .box3{
+			color: orange ;
+			font-size: 13px ;
+		}
+		.headerBot{
+			background-color: black ;
+			color: white;
+		}
+		.list-menu ul{
+			height: 100%;
+		}
+
+		.list-menu ul li{
+			float: left;
+			padding: 0 15px;
+			border-right: 1px solid #fff;
+			height: 100%;
+			display: flex;
+			align-items: center;
+		}
+
+		.box-main-menu{
+			background-color: black;
+		    color: white;
+		    font-size: 17px;
+		}
+		
+		.menu-cap3{
+	    list-style: none;
+	    background-color: black;
+		}
+
+		.menu-cap3 > li{
+	    float: left;
+		}
+
+		.menu-cap3 > li{
+	    font-size: 16px;
+	    display: block;
+	    padding: 10px 15px;
+	    text-decoration: none;
+	    border-right: 1px solid #e0caca;
+	    color: #fff;
+		}
+
+		.menu-cap3 > li:last-child{
+	    border-right: 0;
+	}
+		.menu-cap3 li{
+    position: relative;
+	}
+
+	img{
+		width: 80px;
+		height: 18px;
+	}
+
+	main{
+		background-color: white;
+	}
+	.welcome{
+		padding-top: 20px;
+		padding-bottom: 10px;
+		font-weight: 600 ;
+		color: black;
+		font-size: 18px;
+		border: 0px black solid;
+		display: inline-block;
+		width: 100%;
+	}
+
+	.welcome .ngay{
+		float: right;
+		
+		color: gray ;
+		font-weight: 500;
+		right: 0;
+	}
+
+	.div1{
+		width: 50%;
+		height: 50% ;
+		float: left;
+	}
+	.anh{
+		width: 48%;
+		height: 300px;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		position: relative;
+		
+	}
+	.chuTo{
+		font-size: 30px;
+		position: absolute;
+		color: white; 
+		padding-left: 10px;
+		bottom: 90px;
+	}
+	.chuNho{
+		font-size: 15px;
+		position: absolute;
+		color: white; 
+		padding-left: 10px;
+		bottom: 40px;
+	}
+	.tieuDe {
+		font-size: 15px;
+		position: absolute;
+		color: white; 
+		margin-left: 10px;
+		padding-left: 10px;
+		bottom: 10px;
+		border-left: 2px crimson solid;
+	}
+
+	.box-1{
+	width: 100%;
+}
+.box-1 .box-new-wrap{
+	position: relative;
+	float: left;
+	width: 25%;
+	padding: 5px;
+	box-sizing: border-box;
+	flex: 0 0 25%;
+	background-color: gray;
+}
+
+	.box-new-wrap:first-child{
+		width: 50%;
+		flex: 0 0 50%;
+	}
+	.big-title{
+		position: absolute;
+		color: #fff;
+		font-size: 40px;
+		left: 20px;
+		bottom: 100px;
+	}
+	.small-title{
+		position: absolute;
+		font-size: 15px;
+		bottom: 20px;
+		left: 20px;
+		color: #fff;
+		text-transform: uppercase;
+	}
+	.avata{
+		height: 100%;
+	}
+	.avata img{
+		width: 100%;
+		height: 100%;
+	}
+	.side-bar-right{
+		background-color: #ddd;
+		width: 30%;
+		float: right;
+	}
+	.list-editor{
+		background-color: #93D1F5;
+		padding: 20px;
+	}
+	.side-bar-right .left{
+		float: left;
+		width: 30%;
+	}
+	.side-bar-right .right{
+		float: left;
+		width: 70%;
+	}
+	.number{
+		background: red;
+		width: 36px;
+		border-radius: 50%;
+		line-height: 36px;
+		text-align: center;
+	}
+	ul{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		margin-bottom: -2px;
+	}
+	.box-3{
+		background-color: #363636;
+	}
+	.heading{
+		background-color: #363636;
+		color: #fff;
+		border-bottom: 1px solid #ccc;
+		margin-bottom: -1px;
+	}
+	.heading ul li{
+		float: left;
+		padding: 10px 0px;
+		margin: 0 20px;
+		font-weight: 900;
+	}
+	.heading ul li.active{
+		border-bottom: 4px solid #fff;
+	}
+	.box-video-wrap li{
+		width: 33%;
+		float: left;
+	}
+	.content{
+		padding: 20px;
+	}
+	.box-video{
+
+	}
+	.box-video .avata{
+		float: left;
+		width: 50%;
+		color: #fff;
+	}
+	.box-video .title{
+		float: left;
+		width: 50%;
+		color: #fff;
+		padding-left: 10px;
+    	box-sizing: border-box;
+	}
+.top{
+	overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+

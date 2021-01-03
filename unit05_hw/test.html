@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		body{
+	height: 900px;
+}
+#header{
+	width: 100%;
+	height: 50px;
+}
+#nameHeader{
+	font-weight: bold;
+	font-style: italic;
+	font-size: 35px;
+	float: left;
+}
+#menuHeader{
+	width: 100%;
+	height: 30px;
+}
+#menuHeader ul > li{
+	float: right;
+	margin-right:20px; 
+	margin-top:50px;  
+	font-family: arial;
+	font-size: 25px;
+	color: black;
+}
+#menuHeader ul > li:hover{
+	float: right;
+	margin-right:20px; 
+	margin-top:50px;  
+	font-family: arial;
+	color: blue;
+	cursor: pointer;
+}
+#button{
+	padding: 5px 10px;
+	margin-top:-11px;
+	font-size: 15px;
+	border-radius:5px;
+	font-family: arial;
+	color: blue;
+}
+#button:hover{
+	padding: 5px 10px;
+	margin-top:-11px;
+	font-size: 15px;
+	border-radius:5px;
+	font-family: arial;
+	color: red;
+}
+#container{
+	margin-top: 80px;
+	font-family: arial;
+}
+#container div{
+	float: left;
+}
+#left{
+	width: 20%;
+	height: 500px;
+}
+#left ul > li{
+	margin-top: 10px; 
+	margin-left: -30px; 
+	color: black;
+}
+#left ul > li:hover{
+	margin-top: 10px; 
+	margin-left: -30px; 
+	color: blue;
+	cursor: pointer;
+}
+#content{
+	width: 76%;
+	height: 750px;
+	margin-top: 10px;
+}
+
+#footer{
+	width: 100%;
+	height: 70px;
+	clear: both;
+}
+#footer p{
+	font-size: 15px;
+	float: left;
+	margin-top:70px;
+	margin-right:13px;  
+}
+#footer ul > li{
+	float: left;
+	color: blue;
+	text-decoration: underline;
+	margin-right:10px;
+	margin-top:70px;  
+}
+#footer ul > li:hover{
+	float: left;
+	color: red;
+	text-decoration: underline;
+	margin-right:10px;
+	margin-top:70px;  
+}
+li{
+	list-style: none;
+}
+span{
+	z-index: 1;
+	position: absolute;
+}
+.content-child{
+	width: 30%;
+	height: 31%;
+	margin:1%;
+	border-radius: 10px;
+}
+.top{
+	width: 100%;
+	height: 20%;
+	background-color: whitesmoke;
+	border-radius:20px 20px 0px 0px;
+}
+.bottom{
+	width: 100%;
+	height: 80%;
+	background-color: orange;
+	border-radius:0px 0px 20px 20px;
+	position: relative;
+}
+.bg1{
+	background-image: url('images/ip.jpg');
+	background-size: cover;
+}
+.bg2{
+	background-image: url('images/travel.jpg');
+	background-size: cover;
+}
+.bg3{
+	background-image: url('images/photo.jpg');
+	background-size: cover;
+}
+.bg4{
+	background-image: url('images/finance.jpg');
+	background-size: cover;
+}
+.bg5{
+	background-image: url('images/movie.jpg');
+	background-size: cover;
+}
+.bg6{
+	background-image: url('images/cooking.jpg');
+	background-size: cover;
+}
+.bg7{
+	background-image: url('images/fashion.jpg');
+	background-size: cover;
+}
+.top h3{
+	margin-left: 10px;
+}
+.info{
+	width: 100%;
+	height: 25%;
+	position: absolute;
+	bottom: 0;
+	border-radius:0px 0px 20px 20px;
+	background-color: gray;
+	opacity: 0.8;
+}
+.info h4{
+	margin-left: 10px;
+	color: white;
+}
+	</style>
+</head>
+<body background="images/bg.jpg">
+	<div style="width: 70%" class="container">
+		<div id="header">
+			<p id="nameHeader" align="left">Zent Group</p>
+			<div id="menuHeader">
+				<ul>
+					<li><input type="button" value="Sign In" id="button"></li>
+					<li>Sign Up</li>
+					<li>About</li>
+				</ul>
+			</div>
+		</div>
+		<div id="container" >
+			<div id="left">
+				<ul>
+					<li>Home</li>
+					<li>Tab Gallery</li>
+					<li>Create Tab</li>
+					<li>Favorites</li>
+					<li>Tech News</li>
+					<li>Travel</li>
+					<li>Photography</li>
+					<li>Finance World</li>
+					<li>Movies</li>
+					<li>Cooking</li>
+					<li>Fashion</li>
+				</ul>
+			</div>
+			<div id="content">
+				<div class="content-child">
+					<div class="top">
+						<h3>Tech News</h3>
+					</div>
+					<div class="bottom bg1">
+						<div class="info">
+							<h4>ZentGroup ! Be all you can be</h4>
+						</div>
+					</div>
+				</div>
+				<div class="content-child">
+					<div class="top">
+						<h3>Travel</h3>
+					</div>
+					<div class="bottom bg2">
+						<div class="info">
+							<h4>ZentGroup ! Be all you can be</h4>
+						</div>
+					</div>
+				</div>
+				<div class="content-child">
+					<div class="top">
+						<h3>Photography</h3>
+					</div>
+					<div class="bottom bg3">
+						<div class="info">
+							<h4>ZentGroup ! Be all you can be</h4>
+						</div>
+					</div>
+				</div>
+				<div class="content-child">
+					<div class="top">
+						<h3>Finance World</h3>
+					</div>
+					<div class="bottom bg4">
+						<div class="info">
+							<h4>ZentGroup ! Be all you can be</h4>
+						</div>
+					</div>
+				</div>
+				<div class="content-child">
+					<div class="top">
+						<h3>Movies</h3>
+					</div>
+					<div class="bottom bg5">
+						<div class="info">
+							<h4>ZentGroup ! Be all you can be</h4>
+						</div>
+					</div>
+				</div>
+				<div class="content-child">
+					<div class="top">
+						<h3>Cooking</h3>
+					</div>
+					<div class="bottom bg6">
+						<div class="info">
+							<h4>ZentGroup ! Be all you can be</h4>
+						</div>
+					</div>
+				</div>
+				<div class="content-child">
+					<div class="top">
+						<h3>Fashion</h3>
+					</div>
+					<div class="bottom bg7">
+						<div class="info">
+							<h4>ZentGroup ! Be all you can be</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<p align="left">Copyright © 2015 Zent Group</p>
+			<div>
+				<ul>
+					<li>About</li>
+					<li>FAQ</li>
+					<li>Blog</li>
+					<li>Mac App</li>
+					<li>iPad App</li>
+					<li>Tern of Use</li>
+					<li>Private Pohoy</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
