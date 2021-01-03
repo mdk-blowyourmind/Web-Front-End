@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	<title>Bai 1</title>
+	<style>
+		* {
+			margin: 0 ;
+			padding: 0;
+			box-sizing: border-box;	
+
+		}
+		.clearfix:before,.clearfix:after{
+	    content: '';
+	    display: table;
+	    clear: both;
+		}
+
+		body{
+		font-family: Arial;
+		font-size: 14px;
+		font-weight: 400;
+		}
+
+		.container{
+		width: 90%;
+		margin: 0 auto;
+		/*background-color: #d2d2d2;*/
+		}
+
+		ul, ol{
+		list-style: none;
+		padding: 0;
+	}
+		div{
+			height: 100%;
+			border: 0px red solid;
+		}
+
+		.headerTop {
+			background-color: #2b313b ;
+			color: white;
+		}
+
+		.headerTop .box{
+			float: left ;
+			width: 20%;
+			padding: 10px 15px;
+		}
+
+		.headerTop .box2{
+			font-size: 12px ;
+			width: 55% ;
+		}
+		.headerTop .box3{
+			color: orange ;
+			font-size: 13px ;
+		}
+		.headerBot{
+			background-color: black ;
+			color: white;
+		}
+		.list-menu ul{
+			height: 100%;
+		}
+
+		.list-menu ul li{
+			float: left;
+			padding: 0 15px;
+			border-right: 1px solid #fff;
+			height: 100%;
+			display: flex;
+			align-items: center;
+		}
+
+		.box-main-menu{
+			background-color: black;
+		    color: white;
+		    font-size: 17px;
+		}
+		
+		.menu-cap3{
+	    list-style: none;
+	    background-color: black;
+		}
+
+		.menu-cap3 > li{
+	    float: left;
+		}
+
+		.menu-cap3 > li{
+	    font-size: 16px;
+	    display: block;
+	    padding: 10px 15px;
+	    text-decoration: none;
+	    border-right: 1px solid #e0caca;
+	    color: #fff;
+		}
+
+		.menu-cap3 > li:last-child{
+	    border-right: 0;
+	}
+		.menu-cap3 li{
+    position: relative;
+	}
+
+	img{
+		width: 80px;
+		height: 18px;
+	}
+
+	main{
+		background-color: white;
+	}
+	.welcome{
+		padding-top: 20px;
+		padding-bottom: 10px;
+		font-weight: 600 ;
+		color: black;
+		font-size: 18px;
+		border: 0px black solid;
+		display: inline-block;
+		width: 100%;
+	}
+
+	.welcome .ngay{
+		float: right;
+		
+		color: gray ;
+		font-weight: 500;
+		right: 0;
+	}
+
+	.div1{
+		width: 50%;
+		height: 50% ;
+		float: left;
+	}
+
+	
+
+	</style>
+		
+</head>
+<body>
+	<header id="header">
+		<div class="headerTop">
+			<div class="container">
+				<div class="clearfix">
+					<div class="box box1">
+						We've updated our Privacy and Cookies Policy
+					</div>
+
+					<div class="box box2">
+						We've made some important changes to our Privacy and Cookies Policy and we want you to know what this means for you and your data.
+					</div>
+
+					<div class="box box3 ">
+						<div><i class="fa fa-check" aria-hidden="true"></i> OK</div>
+						<div style="padding-top: 10px;"><i class="fa fa-cog" aria-hidden="true"></i>
+						Find out what's changed</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="headerBot">
+			<div class="container">
+				<ul class="menu-cap3 clearfix">
+					<li style="width: 120px; "><img src="images/bbcdc.png" alt=""></li>
+					<li style="width: 200px;"><i class="fa fa-user-circle" aria-hidden="true"></i> Sign In</li>
+					<li><i class="fa fa-bell" aria-hidden="true"></i></li>
+					<li>Home</li>
+					<li>News</li>
+					<li>Sport</li>
+					<li>Weather</li>
+					<li>iPlayer</li>
+					<li>Sounds</li>
+					<li>CBBC</li>
+					<li style="width: 200px;">More</li>
+					<li><input type="text" name="" value="" placeholder="Search">
+						<i class="fa fa-search" aria-hidden="true"></i></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<div class="container">
+			<div class="welcome clearfix">
+				Welcome to BBC.com
+				<div class="ngay">
+					Thursday, 11 June
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			
+			
+		</div>	
+
+	</main>
+</body>
+</html>

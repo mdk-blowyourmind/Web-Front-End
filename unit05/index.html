@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style>
+		body{
+	
+}
+.container{
+	width: 90%;
+	margin: 0 auto;
+}
+.clear:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.box-1{
+	width: 100%;
+}
+.box-1 .box-new-wrap{
+	position: relative;
+	float: left;
+	width: 25%;
+	padding: 5px;
+	box-sizing: border-box;
+	flex: 0 0 25%;
+	background-color: gray;
+}
+
+	.box-new-wrap:first-child{
+		width: 50%;
+		flex: 0 0 50%;
+	}
+	.big-title{
+		position: absolute;
+		color: #fff;
+		font-size: 40px;
+		left: 20px;
+		bottom: 100px;
+	}
+	.small-title{
+		position: absolute;
+		font-size: 15px;
+		bottom: 20px;
+		left: 20px;
+		color: #fff;
+		text-transform: uppercase;
+	}
+	.avata{
+		height: 100%;
+	}
+	.avata img{
+		width: 100%;
+		height: 100%;
+	}
+	.side-bar-right{
+		background-color: #ddd;
+		width: 30%;
+		float: right;
+	}
+	.list-editor{
+		background-color: #93D1F5;
+		padding: 20px;
+	}
+	.side-bar-right .left{
+		float: left;
+		width: 30%;
+	}
+	.side-bar-right .right{
+		float: left;
+		width: 70%;
+	}
+	.number{
+		background: red;
+		width: 36px;
+		border-radius: 50%;
+		line-height: 36px;
+		text-align: center;
+	}
+	ul{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		margin-bottom: -2px;
+	}
+	.box-3{
+		background-color: #363636;
+	}
+	.heading{
+		background-color: #363636;
+		color: #fff;
+		border-bottom: 1px solid #ccc;
+		margin-bottom: -1px;
+	}
+	.heading ul li{
+		float: left;
+		padding: 10px 0px;
+		margin: 0 20px;
+		font-weight: 900;
+	}
+	.heading ul li.active{
+		border-bottom: 4px solid #fff;
+	}
+	.box-video-wrap li{
+		width: 33%;
+		float: left;
+	}
+	.content{
+		padding: 20px;
+	}
+	.box-video{
+
+	}
+	.box-video .avata{
+		float: left;
+		width: 50%;
+		color: #fff;
+	}
+	.box-video .title{
+		float: left;
+		width: 50%;
+		color: #fff;
+		padding-left: 10px;
+    	box-sizing: border-box;
+	}
+.top{
+	overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+	</style>
+</head>
+<body>
+	<header id="header" class="">
+		<div class="box-header-top">
+			<div class="container">
+				
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="container">
+			<div class="box-1 clear">
+				<div class="box-new-wrap">
+					<div class="avata">
+						<img src="images/27.jpg">
+					</div>
+					<div class="big-title">
+						Us pass...
+					</div>
+					<div class="small-title">
+						world
+					</div>
+				</div>
+				<div class="box-new-wrap">
+					<div class="avata">
+						<img src="images/27.jpg">
+					</div>
+					<div class="big-title">
+						Us pass...
+					</div>
+					<div class="small-title">
+						world
+					</div>
+				</div>
+				<div class="box-new-wrap">
+					<div class="avata">
+						<img src="images/27.jpg">
+					</div>
+					<div class="big-title">
+						Us pass...
+					</div>
+					<div class="small-title">
+						world
+					</div>
+				</div>
+				<div class="box-new-wrap">
+					<div class="avata">
+						<img src="images/27.jpg">
+					</div>
+					<div class="big-title">
+						Us pass...
+					</div>
+					<div class="small-title">
+						world
+					</div>
+				</div>
+				<div class="box-new-wrap">
+					<div class="avata">
+						<img src="images/27.jpg">
+					</div>
+					<div class="big-title">
+						Us pass...
+					</div>
+					<div class="small-title">
+						world
+					</div>
+				</div>
+			</div>
+
+			<div class="box-2 clear">
+				<div class="side-bar-right">
+					<div class="list-editor clear">
+						<div class="left">
+							<div class="number">
+								1
+							</div>
+						</div>
+						<div class="right">
+							<div class="title">
+								Lorem ipsum dolor, sit, amet 
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="box-3">
+				<div class="heading">
+					<ul class="clear">
+						<li class="active">Recomment</li>
+						<li>Most watch</li>
+						<li>Last</li>
+					</ul>
+				</div>
+				<div class="content">
+					<ul class="box-video-wrap clear">
+						<li>
+							<div class="box-video">
+								<div class="avata">
+									<img src="images/32.jpg">
+								</div>
+								<div class="title">
+									<div class="top">
+										Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, repellat sit numquam perspiciatis tenetur, culpa velit unde porro aliquid quisquam quas vero qui! Quas itaque reiciendis, sed, inventore distinctio officia.
+									</div>
+									<div class="national">
+										UK
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="box-video">
+								<div class="avata">
+									<img src="images/32.jpg">
+								</div>
+								<div class="title">
+									<div class="top">
+										Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, repellat sit numquam perspiciatis tenetur, culpa velit unde porro aliquid quisquam quas vero qui! Quas itaque reiciendis, sed, inventore distinctio officia.
+									</div>
+									<div class="national">
+										UK
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="box-video">
+								<div class="avata">
+									<img src="images/32.jpg">
+								</div>
+								<div class="title">
+									<div class="top">
+										Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, repellat sit numquam perspiciatis tenetur, culpa velit unde porro aliquid quisquam quas vero qui! Quas itaque reiciendis, sed, inventore distinctio officia.
+									</div>
+									<div class="national">
+										UK
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</main>
+</body>
+</html>
