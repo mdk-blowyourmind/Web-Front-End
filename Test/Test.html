@@ -3,254 +3,929 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <title>Bai 1</title>
-    <style>
-        body{
-            background-image: url('images/bg.jpg');
-
-        }
-        h1  {
-            font-size: 150%
-        }
-        * {
-            font-family: freestyle script ;
-            font-size: 110%;
-
-        }
-
-        .container {
-            width: 1000px ;
-            height: 750px ;
-            border: 0px black solid ;
-            
-            display: inline-block;
-            position: relative;
-            left: 20px ;
-            top: 20px ;
-        }
-
-        .container:after {
-            content: "";
-            display: block ;
-            clear: both ;
-        }
-
-        p {
-            position: relative;
-            padding: 0px ;
-            margin: 0px ;
-        }
-        p:hover {
-            color: crimson ;
-
-        }
-
-        .work-step {
-    background-color: white;
-    color: black ;
     
-    
-    border-radius: 20px;
-    height: 50px;
-    width: 50px;
-    
-    float: left;
-    
-    
-    
-    z-index: 1;
-    
-    margin: 0px ;
-    padding: 0px ;
-
-}
-
-        div {
-            position: relative;
-        }
-
-        .work-step:hover {
-            color: crimson ;
-            background: crimson ;
-
-            
-        }
-
-
-    </style>
+        
 </head>
 <body>
-    <form action="">
-        
+    <header id="header">
+        <div class="headerTop">
             <div class="container">
-                <div  style="float: left; border: 0px black solid;width: 100%
-                ">
-                    <div style="display: inline-block; display: inline-block; float: left;"><b>Zent Group</b></div>
-                    <div align="right" style="background-color: azure; border:1px solid azure; border-radius: 10px;display: inline-block; float: right;"><p>Sign In</p></div>
-                    <div style="display: inline-block; float: right;padding-right: 20px;"><p>Sign up</p></div>
-                    <div style="display: inline-block; float: right;padding-right: 20px;"><p>About</p></div>
+                <div class="clearfix">
+                    <div class="box box1">
+                        We've updated our Privacy and Cookies Policy
+                    </div>
+
+                    <div class="box box2">
+                        We've made some important changes to our Privacy and Cookies Policy and we want you to know what this means for you and your data.
+                    </div>
+
+                    <div class="box box3 ">
+                        <div><i class="fa fa-check" aria-hidden="true"></i> OK</div>
+                        <div style="padding-top: 10px;"><i class="fa fa-cog" aria-hidden="true"></i>
+                        Find out what's changed</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="headerBot">
+            <div class="container">
+                <ul class="menu-cap3 clearfix">
+                    <li style="width: 120px; "><img src="images/bbcdc.png" alt=""></li>
+                    <li style="width: 120px;"><i class="fa fa-user-circle" aria-hidden="true"></i> Sign In</li>
+                    <li style="width: 70px;"><i class="fa fa-bell" aria-hidden="true"></i></li>
+                    <li style="width: 80px;">Home</li>
+                    <li style="width: 80px;">News</li>
+                    <li style="width: 80px;">Sport</li>
+                    <li style="width: 100px;">Weather</li>
+                    <li style="width: 80px;">iPlayer</li>
+                    <li style="width: 80px;">Sounds</li>
+                    <li style="width: 80px;">CBBC</li>
+                    <li style="width: 200px;">More</li>
+                    <li><input type="text" name="" value="" placeholder="Search">
+                        <i class="fa fa-search" aria-hidden="true"></i></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="welcome clearfix">
+                Welcome to BBC.com
+                <div class="ngay">
+                    Thursday, 11 June
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="grid-container">
+                <div style="background-image: url('images/27.jpg');" class="anh">
+                    <p class="chuTo">US passes two million cases as states report rise</p>
+                
+                <p class="chuNho">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque,
+                </p>
+
+                <p class="tieuDe">
+                       WORLD
+                </p>
                 </div>
 
-                <div style="border: 0px black solid; left:20px; top:50px; width: 800px; height: 750px;" >
-                    <div style="float: left; border: 0px black solid">
-                        <div style="display: block;"><p>Home</p></div>
-                        <div style="display: block;"><p>Tab Galery</p></div>
-                        <div style="display: block;"><p>Create Tab</p></div>
-                        <div style="display: block;"><p>Favorates</p></div>
-                        <div style="display: block;"><p>Tech News</p></div>
-                        <div style="display: block;"><p>Travel</p></div>
-                        <div style="display: block;"><p>Photograpthy</p></div>
-                        <div style="display: block;"><p>Finance World</p></div>
-                        <div style="display: block;"><p>Movies</p></div>
-                        <div style="display: block;"><p>Cooking</p></div>
-                        <div style="display: block;"><p>Fashion</p></div>
+                <div class="grid-container">
+                    <div style="background-image: url('images/25.jpg');" class="anhNho">
+                        <p class="chuTo2">US passes two million cases as states report rise</p>
+                        <p class="tieuDe2">
+                       WORLD
+                </p>
                     </div>
 
-                    <div class="work-step" style="width: 200px; height: 200px; background-image: url('images/ip.jpg');
-                        background-repeat: no-repeat; left: 70px ;
-                        background-attachment: all;
-                        background-size: 100% 100%;border: 1px azure solid ;  ">
-                        <div style="overflow: auto; background-color: white; border-top-left-radius: 20px; border-top-right-radius: 20px;
-                        width: 100%;  margin-left: 0px; margin-right: 0px;margin: 0px; padding: 0px;font-size: 80%;text-align: center; 
-                        ">
-                            Tech News
-                        </div>
-
-                        <div style="text-align: center; font-size: 50%;border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;
-                        width: 100%; position: absolute; bottom: 0px; color: white;background-color: gray; 
-                        ">
-                            ZentPhone by Zent Group
-                        </div>
+                    <div style="background-image: url('images/24.jpg');" class="anhNho">
+                        <p class="chuTo2">US passes two million cases as states report rise</p>
+                        <p class="tieuDe2">
+                       WORLD
+                </p>
                     </div>
 
-                    <div class="work-step" style="width: 200px; height: 200px; background-image: url('images/travel.jpg'); 
-                        background-repeat: no-repeat;
-                        background-attachment: all;
-                        background-size: 100% 100%; left: 80px; overflow: all; border: 1px azure solid ;">
-                        <div style="overflow: auto; background-color: white; border-top-left-radius: 20px; border-top-right-radius: 20px;
-                        width: 100%;  margin-left: 0px; margin-right: 0px;margin: 0px; padding: 0px;font-size: 80%;text-align: center;
-                        ">
-                            Travel
-                        </div>
-
-                        <div style="text-align: center; font-size: 50%;border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;
-                        width: 100%; position: absolute; bottom: 0px; color: white;background-color: gray; 
-                        ">
-                            Do your best - The rest will come 
-                        </div>
+                    <div style="background-image: url('images/49.jpg');" class="anhNho">
+                        <p class="chuTo2">US passes two million cases as states report rise</p>
+                        <p class="tieuDe2">
+                       WORLD
+                </p>
                     </div>
 
-                    <div class="work-step" style="width: 200px; height: 200px; background-image: url('images/photo.jpg'); 
-                        background-repeat: no-repeat;
-                        background-attachment: all; border: 1px azure solid ;
-                        background-size: 100% 100%; left: 90px; overflow: all; ">
-                        <div style="overflow: auto; background-color: white; border-top-left-radius: 20px; border-top-right-radius: 20px;
-                        width: 100%;  margin-left: 0px; margin-right: 0px; padding: 0px;font-size: 80%;text-align: center;
-                        ">
-                            Photography
-                        </div>
-
-                        <div style="text-align: center; font-size: 50%;border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;
-                        width: 100%; position: absolute; bottom: 0px; color: white;background-color: gray; 
-                        ">
-                            Take a shot ! A Pulitzer price is waiting for you
-                        </div>
+                    <div style="background-image: url('images/50.jpg');" class="anhNho">
+                        <p class="chuTo2">US passes two million cases as states report rise</p>
+                        <p class="tieuDe2">
+                       WORLD
+                </p>
                     </div>
 
-                    <div class="work-step" style="width: 200px; height: 200px; background-image: url('images/finance.jpg'); 
-                        background-repeat: no-repeat;
-                        background-attachment: all;
-                        background-size: 100% 100%; left: 70px; top: 10px; overflow: all;border: 1px azure solid ; ">
-                        <div style="overflow: auto; background-color: white; border-top-left-radius: 20px; border-top-right-radius: 20px;
-                        width: 100%;  margin-left: 0px; margin-right: 0px; padding: 0px;font-size: 80%;text-align: center;
-                        ">
-                            Finance World 
-                        </div>
+                </div>
+            </div>
 
-                        <div style="text-align: center; font-size: 50%;border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;
-                        width: 100%; position: absolute; bottom: 0px; color: white;background-color: gray; 
-                        ">
-                            Gold ? Please dont chase it. What about dollar? Keep calm!
-                        </div>
+        </div>  
+
+        <div class="container">
+            <div class="div-cd">
+                <p class="tieuDeX">News</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="grid-container2">
+
+                <div class="grid-item">
+                    <img class="anh2" src="images/31.jpg" alt="">
+                    <p class="p1">Trump to restart rallies on key slavery date</p>
+                    <p class="p2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, at. Alias quos delectus veritatis obcaecati. Facilis numquam neque optio voluptas.
+                    </p>
+                    <p class="p3">
+                        US & CANADA
+                    </p>
+                </div>
+               <div class="grid-item">
+                    <img class="anh2" src="images/30.jpg" alt="">
+                    <p class="p1">Trump to restart rallies on key slavery date</p>
+                    <p class="p2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, at. Alias quos delectus veritatis obcaecati. Facilis numquam neque optio voluptas.
+                    </p>
+                    <p class="p3">
+                        US & CANADA
+                    </p>
+                </div>
+
+                <div class="grid-item">
+                    <img class="anh2" src="images/4.jpg" alt="">
+                    <p class="p1">Trump to restart rallies on key slavery date</p>
+                    <p class="p2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, at. Alias quos delectus veritatis obcaecati. Facilis numquam neque optio voluptas.
+                    </p>
+                    <p class="p3">
+                        US & CANADA
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="container">
+            <div class="div-cd">
+                <p class="tieuDeX">Sport</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="grid-container2">
+                <div class="grid-item">
+                    <img class="anh2" src="images/21.jpg" alt="">
+                    <p class="p1">Premier League clubs face $1bn revenue drop</p>
+                    <p class="p2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, at. Alias quos delectus veritatis obcaecati. Facilis numquam neque optio voluptas.
+                    </p>
+                    <p class="p3">
+                        FOOTBALL
+                    </p>
+                </div>
+
+               <div class="grid-item">
+                    <img class="anh2" src="images/3.jpg" alt="">
+                    <p class="p1">Premier League clubs face $1bn revenue drop</p>
+                    <p class="p2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, at. Alias quos delectus veritatis obcaecati. Facilis numquam neque optio voluptas.
+                    </p>
+                    <p class="p3">
+                        FOOTBALL
+                    </p>
+                </div>
+
+                <div class="grid-item">
+                    <img class="anh2" src="images/22.jpg" alt="">
+                    <p class="p1">Premier League clubs face $1bn revenue drop</p>
+                    <p class="p2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, at. Alias quos delectus veritatis obcaecati. Facilis numquam neque optio voluptas.
+                    </p>
+                    <p class="p3">
+                        FOOTBALL
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="welcome clearfix">
+                LONDON WEATHER 
+                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+            </div>
+            <div >
+                <i id="weather" class="fa fa-sun-o" aria-hidden="true"></i>
+                <i id="weather" class="fa fa-bolt" aria-hidden="true"></i>
+            </div>
+
+        </div>
+
+        <div style="background-image: url('images/bg1.jpg');" class="bg">
+            <div class="container">
+                <!-- <p style="font-size: 300%;color: white;font-weight: bold;">REEL</p> -->
+                <div style="height: 15%;"  class="grid-containerTD">
+                    <div style="font-size: 300%;color: white;font-weight: bold;">REEL</div>
+                    <div style="border-radius: 10px; border: 1px white solid; color: white; padding: 20px;width: 120px;text-align: center;">Visit Reel</div>
+                </div>
+
+            
+        
+                <p style="color: white;margin-bottom: 10px;">The most amazing videos from the BBC</p>
+
+                <div class="grid-container3">
+                <div class="grid-item3">
+                    <div style="background-color: white">
+                        <img style="margin: 0 auto;" class="anh2" src="images/52.jpg" alt="">
+                        <p style="background-color: white;
+                        ;" class="p1">The world record-breaking tree that won't stop growing</p>
                     </div>
-
-                    <div class="work-step" style="width: 200px; height: 200px; background-image: url('images/movie.jpg'); 
-                        background-repeat: no-repeat; border: 1px azure solid ;
-                        background-attachment: all;
-                        background-size: 100% 100%; left: 80px; top: 10px; overflow: all; ">
-                        <div style="overflow: auto; background-color: white; border-top-left-radius: 20px; border-top-right-radius: 20px;
-                        width: 100%;  margin-left: 0px; margin-right: 0px; padding: 0px;font-size: 80%;text-align: center;
-                        ">
-                            Movies 
-                        </div>
-
-                        <div style="text-align: center; background-color: gray; font-size: 50%;border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;
-                        width: 100%; position: absolute; bottom: 0px; color: white;
-                        ">
-                            Batman the rising is released in October
-                        </div>
-                    </div>
-
-                    <div class="work-step" style="width: 200px; height: 200px; background-image: url('images/cooking.jpg'); 
-                        background-repeat: no-repeat;
-                        background-attachment: all;
-                        background-size: 100% 100%; left: 90px; top: 10px; overflow: all;border: 1px azure solid ; ">
-                        <div style="overflow: auto; background-color: white; border-top-left-radius: 20px; border-top-right-radius: 20px;
-                        width: 100%;  margin-left: 0px; margin-right: 0px; padding: 0px;font-size: 80%;text-align: center;
-                        ">
-                            Cooking 
-                        </div>
-
-                        <div style="text-align: center; background-color: gray; font-size: 50%;border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;
-                        width: 100%; position: absolute; bottom: 0px; color: white;
-                        ">
-                            How to cook spaghetti? Just click and taste
-                        </div>
-                    </div>
-
-                    <div class="work-step" style="width: 200px; height: 200px; background-image: url('images/fashion.jpg'); 
-                        background-repeat: no-repeat;
-                        background-attachment: all;
-                        background-size: 100% 100%; left: 70px; top: 20px; overflow: all; border: 1px azure solid ;">
-                        <div style="overflow: auto; background-color: white; border-top-left-radius: 20px; border-top-right-radius: 20px;
-                        width: 100%;  margin-left: 0px; margin-right: 0px; padding: 0px;font-size: 80%;text-align: center;
-                        ">
-                            Fashion 
-                        </div>
-
-                        <div style="text-align: center; background-color: gray; font-size: 50%;border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;
-                        width: 100%; position: absolute; bottom: 0px; color: white;
-                        ">
-                            London fashion week with collection of Zent Group and YellowSipMan
-                        </div>
-                    </div>
-
-
                     
+                
+                </div>
 
-                    <div style="content: " ";
-                            display: block ;
-                            clear: both ;">
+               <div class="grid-item3">
+                    <div style="background-color: white">
+                        <img style="margin: 0 auto;" class="anh2" src="images/48.jpg" alt="">
+                        <p style="background-color: white;
+                        ;" class="p1">The world record-breaking tree that won't stop growing</p>
+                    </div>                  
+                </div>
+
+                <div class="grid-item3">
+                    <div style="background-color: white">
+                        <img style="margin: 0 auto;" class="anh2" src="images/55.jpg" alt="">
+                        <p style="background-color: white;
+                        ;" class="p1">The world record-breaking tree that won't stop growing</p>
+                    </div>
+                    
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="div-cd">
+                <p class="tieuDeX">Editor's Picks</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="grid-container3">
+                <div class="item1 grid-item">
+                    <div style="background-image: url('images/53.jpg');" class="anh3">
+                    <p class="chuTo3">Why we must overcome racism to survive</p>
+                
+                <p class="chuNho3">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque,
+                </p>
+
+                <p class="tieuDe3">
+                       WORLD
+                </p>
+                    </div>
+
+                    <div style="margin-top: 10px;" class="grid-container2">
+                        <div  class="grid-item">
+                    <img class="anh2" src="images/41.jpg" alt="">
+                    <p class="p1">Trump to restart rallies on key slavery date</p>
+                    <p class="p2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, at. Alias quos delectus veritatis obcaecati. Facilis numquam neque optio voluptas.
+                    </p>
+                    <p class="p3">
+                        US & CANADA
+                    </p>
+                </div>
+
+                <div class="grid-item">
+                    <img class="anh2" src="images/32.jpg" alt="">
+                    <p class="p1">Trump to restart rallies on key slavery date</p>
+                    <p class="p2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, at. Alias quos delectus veritatis obcaecati. Facilis numquam neque optio voluptas.
+                    </p>
+                    <p class="p3">
+                        US & CANADA
+                    </p>
+                </div>
+
+                <div class="grid-item">
+                    <img class="anh2" src="images/51.jpg" alt="">
+                    <p class="p1">Trump to restart rallies on key slavery date</p>
+                    <p class="p2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, at. Alias quos delectus veritatis obcaecati. Facilis numquam neque optio voluptas.
+                    </p>
+                    <p class="p3">
+                        US & CANADA
+                    </p>
+                </div>
+                    </div>
+
+                    <div style="margin-top: 10px;" class="grid-container2">
+                        <div  class="grid-item">
+                    <img class="anh2" src="images/12.jpg" alt="">
+                    <p class="p1">Trump to restart rallies on key slavery date</p>
+                    <p class="p2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, at. Alias quos delectus veritatis obcaecati. Facilis numquam neque optio voluptas.
+                    </p>
+                    <p class="p3">
+                        US & CANADA
+                    </p>
+                </div>
+
+                <div class="grid-item">
+                    <img class="anh2" src="images/24.jpg" alt="">
+                    <p class="p1">Trump to restart rallies on key slavery date</p>
+                    <p class="p2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, at. Alias quos delectus veritatis obcaecati. Facilis numquam neque optio voluptas.
+                    </p>
+                    <p class="p3">
+                        US & CANADA
+                    </p>
+                </div>
+
+                <div class="grid-item">
+                    <img class="anh2" src="images/10.jpg" alt="">
+                    <p class="p1">Trump to restart rallies on key slavery date</p>
+                    <p class="p2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, at. Alias quos delectus veritatis obcaecati. Facilis numquam neque optio voluptas.
+                    </p>
+                    <p class="p3">
+                        US & CANADA
+                    </p>
+                </div>
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <div class="news">
+                        <div style="height: 100%">
+                            <p style="color: white; font-weight: 600;background-color: crimson;padding: 6px;">LATEST BUSINESS NEWS</p>
+                            <div class="grid-container4">
+                                <div style="background-image: url('images/33.jpg'); background-size: 100% 100%; bg" class="circle">
+                                
+                                </div>
+                                <div style="color: white;padding: 20px; font-size: 20px;">Ben & Jerrys maker Unilever settles in UK base</div>
+                            </div>
+                            <div class="grid-container5">
+                                <div style="background-image: url('images/2.jpg'); background-size: 100% 100%; bg" class="circle">
+                                
+                                </div>
+                                <div style="color: white;padding: 20px; font-size: 20px;">Ben & Jerrys maker Unilever settles in UK base</div>
+                            </div>
+                            <div class="grid-container4">
+                                <div style="background-image: url('images/1.jpg'); background-size: 100% 100%; bg" class="circle">
+                                
+                                </div>
+                                <div style="color: white;padding: 20px; font-size: 20px;">Ben & Jerrys maker Unilever settles in UK base</div>
+                            </div>
+                            <div class="grid-container5">
+                                <div style="background-image: url('images/54.jpg'); background-size: 100% 100%; bg" class="circle">
+                                
+                                </div>
+                                <div style="color: white;padding: 20px; font-size: 20px;">Ben & Jerrys maker Unilever settles in UK base</div>
+                            </div>
+                            <div class="grid-container4">
+                                <div style="background-image: url('images/55.jpg'); background-size: 100% 100%; bg" class="circle">
+                                
+                                </div>
+                                <div style="color: white;padding: 20px; font-size: 20px;">Ben & Jerrys maker Unilever settles in UK base</div>
+                            </div>
+
+                        </div>
+                        
                         
                     </div>
-
-
-
                 </div>
-
-                
             </div>
-            <div style="bottom: 0px;float: left; border: 0px solid black; left: 50px">
-                    <div style="display: inline-block;font-size: 90%">Copyright @ 2015 Zent Group </div>
-                    <div style="display: inline-block;font-size: 90%;left: 30px; color: coral; text-decoration: underline;"><p>About</p> </div>
-                    <div style="display: inline-block;font-size: 90%;left: 30px; color: coral; text-decoration: underline;"><p>FAQ</p> </div>
-                    <div style="display: inline-block;font-size: 90%;left: 30px; color: coral; text-decoration: underline;"><p>Blog</p> </div>
-                    <div style="display: inline-block;font-size: 90%;left: 30px; color: coral; text-decoration: underline;"><p>Mac App </p></div>
-                    <div style="display: inline-block;font-size: 90%;left: 30px; color: coral; text-decoration: underline;"><p>iPad App</p> </div>
-                    <div style="display: inline-block;font-size: 90%;left: 30px; color: coral; text-decoration: underline;"><p>Term of use</p> </div>
-                    <div style="display: inline-block;font-size: 90%;left: 30px; color: coral; text-decoration: underline;"><p>Private Policy</p> </div>
+        </div>
+
+        <div style="margin-top: 820px;" class="gg">
+            
+                <div style="background-image: url('images/54.jpg');" class="bg">
+            <div class="container">
+                <!-- <p style="font-size: 300%;color: white;font-weight: bold;">REEL</p> -->
+                <div  class="grid-containerTD">
+                    <div style="font-size: 250%;color: white;font-weight: bold;font-family: freestyle script;color: gold;">Future Planet</div>
+                    <div style="border-radius: 10px; border: 1px white solid; color: white; padding-top: 15px; padding-bottom: 10px;width: 120px;text-align: center;">Visit Future Planet</div>
                 </div>
+
+            
+        
+                <p style="color: white;margin-bottom: 10px;">The most amazing videos from the BBC</p>
+
+                <div class="grid-container3">
+                <div class="grid-item3">
+                    <div style="background-color: white">
+                        <img style="margin: 0 auto;" class="anh2" src="images/45.jpg" alt="">
+                        <p style="background-color: white;
+                        ;" class="p1">The world record-breaking tree that won't stop growing</p>
+                    </div>
                     
-    </form>
+                
+                </div>
+
+               <div class="grid-item3">
+                    <div style="background-color: white">
+                        <img style="margin: 0 auto;" class="anh2" src="images/43.jpg" alt="">
+                        <p style="background-color: white;
+                        ;" class="p1">The world record-breaking tree that won't stop growing</p>
+                    </div>                  
+                </div>
+
+                <div class="grid-item3">
+                    <div style="background-color: white">
+                        <img style="margin: 0 auto;" class="anh2" src="images/42.jpg" alt="">
+                        <p style="background-color: white;
+                        ;" class="p1">The world record-breaking tree that won't stop growing</p>
+                    </div>
+                    
+                </div>
+            </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="grid-container">
+            <div>
+                <div style="font-size: 120%;font-weight: bold;height: 6%;margin-top: 10px;">
+                    TECHNOLOGY OF BUSINESS
+                </div>
+                <img class="anh2" src="images/11.jpg" alt="">
+                    <p class="p1">Trump to restart rallies on key slavery date</p>
+                    <p class="p2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, at. Alias quos delectus veritatis obcaecati. Facilis numquam neque optio voluptas.
+                    </p>
+                    <p class="p3">
+                        US & CANADA
+                    </p>
+
+            </div>
+
+            <div>
+                <div style="font-size: 120%;font-weight: bold;height: 6%;margin-top: 10px;">
+                    FOLLOW THE FOOD
+                </div>
+                <img class="anh2" src="images/44.jpg" alt="">
+                    <p class="p1">Trump to restart rallies on key slavery date</p>
+                    <p class="p2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, at. Alias quos delectus veritatis obcaecati. Facilis numquam neque optio voluptas.
+                    </p>
+                    <p class="p3">
+                        US & CANADA
+                    </p>
+
+            </div>
+        </div>
+    </div>
+
+        <div style="height: 1000px; background-color: #f0f3f5; margin-top: 40px;" class="bg">
+            <div class="container">
+            <div class="div-cd">
+                <p class="tieuDeX">Features video</p>
+            </div>
+
+            <div style="background-image: url('images/bgx.jpg');height: 700px;" class="anh">
+                <i style="font-size: 600%" class="fa fa-play-circle-o" aria-hidden="true"></i>
+
+
+                    <p class="chuTo">US passes two million cases as states report rise</p>
+                
+                <p class="chuNho">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque,
+                </p>
+
+                <p class="tieuDe">
+                       WORLD
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            
+
+            <div class="box-3">
+                <div class="heading">
+                    <ul class="clear">
+                        <li class="active">Recomment</li>
+                        <li>Most watch</li>
+                        <li>Last</li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <ul class="box-video-wrap clear">
+                        <li>
+                            <div class="box-video">
+                                <div class="avata">
+                                    <img src="images/32.jpg">
+                                </div>
+                                <div class="title">
+                                    <div class="top">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, repellat sit numquam perspiciatis tenetur, culpa velit unde porro aliquid quisquam quas vero qui! Quas itaque reiciendis, sed, inventore distinctio officia.
+                                    </div>
+                                    <div class="national">
+                                        UK
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box-video">
+                                <div class="avata">
+                                    <img src="images/32.jpg">
+                                </div>
+                                <div class="title">
+                                    <div class="top">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, repellat sit numquam perspiciatis tenetur, culpa velit unde porro aliquid quisquam quas vero qui! Quas itaque reiciendis, sed, inventore distinctio officia.
+                                    </div>
+                                    <div class="national">
+                                        UK
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box-video">
+                                <div class="avata">
+                                    <img src="images/32.jpg">
+                                </div>
+                                <div class="title">
+                                    <div class="top">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, repellat sit numquam perspiciatis tenetur, culpa velit unde porro aliquid quisquam quas vero qui! Quas itaque reiciendis, sed, inventore distinctio officia.
+                                    </div>
+                                    <div class="national">
+                                        UK
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="margin-top: 30px; margin-bottom: 30px;" class="container">
+        <div class="grid-container6">
+            <div style="background-color: crimson;color: white;font-weight: bold;">BBC WORLD SERVICE</div>
+            <div style="background-color: black;
+            color: white;padding: 0px;">
+                <i class="fa fa-volume-up" aria-hidden="true"></i>
+                ON AIR - Witness History
+
+            </div>
+        </div>
+    </div>
+
+        <div style="height: 1300px; background-color: #f0f3f5; margin-top: 40px;" class="bg">
+            <div class="container">
+                <div class="div-cd">
+                    <p class="tieuDeX">Features video</p>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="grid-containerX">
+
+                  <div class="itemX"><div style="" class="grid-item">
+                    <div style="" class="news">
+                        <div style="height: 100%">
+                            <p style="color: white; font-weight: 600;background-color: crimson;padding: 6px;">LATEST BUSINESS NEWS</p>
+                            <div class="grid-container4">
+                                <div style="background-image: url('images/33.jpg'); background-size: 100% 100%; bg" class="circle">
+                                
+                                </div>
+                                <div style="color: white;padding: 20px; font-size: 20px;">Ben & Jerrys maker Unilever settles in UK base</div>
+                            </div>
+                            <div class="grid-container5">
+                                <div style="background-image: url('images/34.jpg'); background-size: 100% 100%; bg" class="circle">
+                                
+                                </div>
+                                <div style="color: white;padding: 20px; font-size: 20px;">Ben & Jerrys maker Unilever settles in UK base</div>
+                            </div>
+                            <div class="grid-container4">
+                                <div style="background-image: url('images/35.jpg'); background-size: 100% 100%; bg" class="circle">
+                                
+                                </div>
+                                <div style="color: white;padding: 20px; font-size: 20px;">Ben & Jerrys maker Unilever settles in UK base</div>
+                            </div>
+                            <div class="grid-container5">
+                                <div style="background-image: url('images/36.jpg'); background-size: 100% 100%; bg" class="circle">
+                                
+                                </div>
+                                <div style="color: white;padding: 20px; font-size: 20px;">Ben & Jerrys maker Unilever settles in UK base</div>
+                            </div>
+                            <div class="grid-container4">
+                                <div style="background-image: url('images/37.jpg'); background-size: 100% 100%; bg" class="circle">
+                                
+                                </div>
+                                <div style="color: white;padding: 20px; font-size: 20px;">Ben & Jerrys maker Unilever settles in UK base</div>
+                            </div>
+                            <div class="grid-container5">
+                                <div style="background-image: url('images/38.jpg'); background-size: 100% 100%; bg" class="circle">
+                                
+                                </div>
+                                <div style="color: white;padding: 20px; font-size: 20px;">Ben & Jerrys maker Unilever settles in UK base</div>
+                            </div>
+                            <div class="grid-container4">
+                                <div style="background-image: url('images/39.jpg'); background-size: 100% 100%; bg" class="circle">
+                                
+                                </div>
+                                <div style="color: white;padding: 20px; font-size: 20px;">Ben & Jerrys maker Unilever settles in UK base</div>
+                            </div>
+                            <div style="height: 200px;" class="grid-container5">
+                                <div style="background-image: url('images/33.jpg'); background-size: 100% 100%; bg" class="circle">
+                                
+                                </div>
+                                <div style="color: white;padding: 20px; font-size: 20px;">Ben & Jerrys maker Unilever settles in UK base</div>
+                            </div>
+                            
+
+
+
+                        </div>
+                        
+                        
+                    </div>
+                </div></div>
+                  <div class="itemY"><div style="background-image: url('images/18.jpg');" class="anh3">
+                    <p class="chuTo3">Why we must overcome racism to survive</p>
+                
+                <p class="chuNho3">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque,
+                </p>
+
+                <p class="tieuDe3">
+                       WORLD
+                </p>
+                    </div></div>
+                  <div class="item3"><div  class="grid-item">
+                    <img class="anh2" src="images/19.jpg" alt="">
+                    <p class="p1">Trump to restart rallies on key slavery date</p>
+                    <p class="p2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, at. Alias quos delectus veritatis obcaecati. Facilis numquam neque optio voluptas.
+                    </p>
+                    <p class="p3">
+                        US & CANADA
+                    </p>
+                </div></div>  
+                  <div class="item4"><div  class="grid-item">
+                    <img class="anh2" src="images/20.jpg" alt="">
+                    <p class="p1">Trump to restart rallies on key slavery date</p>
+                    <p class="p2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, at. Alias quos delectus veritatis obcaecati. Facilis numquam neque optio voluptas.
+                    </p>
+                    <p class="p3">
+                        US & CANADA
+                    </p>
+                </div></div>
+                  <div class="item5"><div  class="grid-item">
+                    <img class="anh2" src="images/21.jpg" alt="">
+                    <p class="p1">Trump to restart rallies on key slavery date</p>
+                    <p class="p2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, at. Alias quos delectus veritatis obcaecati. Facilis numquam neque optio voluptas.
+                    </p>
+                    <p class="p3">
+                        US & CANADA
+                    </p>
+                </div></div>
+                  <div class="item6"><div  class="grid-item">
+                    <img class="anh2" src="images/22.jpg" alt="">
+                    <p class="p1">Trump to restart rallies on key slavery date</p>
+                    <p class="p2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, at. Alias quos delectus veritatis obcaecati. Facilis numquam neque optio voluptas.
+                    </p>
+                    <p class="p3">
+                        US & CANADA
+                    </p>
+                </div></div>
+                  <div class="item7"><div  class="grid-item">
+                    <img class="anh2" src="images/23.jpg" alt="">
+                    <p class="p1">Trump to restart rallies on key slavery date</p>
+                    <p class="p2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, at. Alias quos delectus veritatis obcaecati. Facilis numquam neque optio voluptas.
+                    </p>
+                    <p class="p3">
+                        US & CANADA
+                    </p>
+                </div></div>
+                  <div class="item7"><div  class="grid-item">
+                    <img class="anh2" src="images/24.jpg" alt="">
+                    <p class="p1">Trump to restart rallies on key slavery date</p>
+                    <p class="p2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, at. Alias quos delectus veritatis obcaecati. Facilis numquam neque optio voluptas.
+                    </p>
+                    <p class="p3">
+                        US & CANADA
+                    </p>
+                </div>
+            </div>
+ 
+  
+   
+                </div>
+
+        
+        </div>
+
+        <div style="margin-top: 100px;" class="container">
+        <div class="grid-container">
+            <div>
+                <div style="font-size: 120%;font-weight: bold;height: 6%;margin-top: 10px;">
+                    THE BOSS
+                </div>
+                <img class="anh" src="images/16.jpg" alt="">
+                    <p class="p1">Trump to restart rallies on key slavery date</p>
+                    <p class="p2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, at. Alias quos delectus veritatis obcaecati. Facilis numquam neque optio voluptas.
+                    </p>
+                    <p class="p3">
+                        US & CANADA
+                    </p>
+
+            </div>
+
+            <div>
+                <div style="font-size: 120%;font-weight: bold;height: 6%;margin-top: 10px;">
+                    FOLLOW THE FOOD
+                </div>
+                <img class="anh" src="images/13.jpg" alt="">
+                    <p class="p1">Trump to restart rallies on key slavery date</p>
+                    <p class="p2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, at. Alias quos delectus veritatis obcaecati. Facilis numquam neque optio voluptas.
+                    </p>
+                    <p class="p3">
+                        US & CANADA
+                    </p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+            <div class="div-cd">
+                <p class="tieuDeX">Pictures</p>
+            </div>
+        </div>
+
+    <div style="margin-top: 0px;" class="container">
+        <div class="grid-container">
+            <div>
+                
+                <div style="background-image: url('images/15.jpg');" class="anh">
+                <i style="font-size: 400%" class="fa fa-camera" aria-hidden="true"></i>
+
+
+                    <p class="chuTo">US passes two million cases as states report rise</p>
+                
+                <p class="chuNho">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque,
+                </p>
+
+                <p class="tieuDe">
+                       WORLD
+                </p>
+            </div>
+
+            </div>
+
+            <div>
+                
+                <div style="background-image: url('images/17.jpg');" class="anh">
+                <i style="font-size: 400%" class="fa fa-camera" aria-hidden="true"></i>
+
+
+                    <p class="chuTo">US passes two million cases as states report rise</p>
+                
+                <p class="chuNho">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque,
+                </p>
+
+                <p class="tieuDe">
+                       WORLD
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+        <div style="margin-top: 10px;" class="grid-container3">
+                <div class="grid-item3">
+                    <div style="background-color: white">
+                        <img style="margin: 0 auto;" class="anh2" src="images/45.jpg" alt="">
+                        <p style="background-color: white;
+                        ;" class="p1">The world record-breaking tree that won't stop growing</p>
+                    </div>
+                    
+                
+                </div>
+
+               <div class="grid-item3">
+                    <div style="background-color: white">
+                        <img style="margin: 0 auto;" class="anh2" src="images/43.jpg" alt="">
+                        <p style="background-color: white;
+                        ;" class="p1">The world record-breaking tree that won't stop growing</p>
+                    </div>                  
+                </div>
+
+                <div class="grid-item3">
+                    <div style="background-color: white">
+                        <img style="margin: 0 auto;" class="anh2" src="images/42.jpg" alt="">
+                        <p style="background-color: white;
+                        ;" class="p1">The world record-breaking tree that won't stop growing</p>
+                    </div>
+                    
+                </div>
+            </div>
+
+            
+                <div class="grid-containerG">
+
+                    <div>
+                        <p>Russian</p>
+                        <p>Lorem ipsum, dolor sit amet.</p>
+                        <p>Lorem ipsum, dolor sit amet.</p>
+                        <p>Lorem ipsum, dolor sit amet.</p>
+                        <p>Lorem ipsum, dolor sit amet.</p>
+
+                    </div>
+                    <div>
+                        <p>Russian</p>
+                        <p>Lorem ipsum, dolor sit amet.</p>
+                        <p>Lorem ipsum, dolor sit amet.</p>
+                        <p>Lorem ipsum, dolor sit amet.</p>
+                        <p>Lorem ipsum, dolor sit amet.</p>
+
+                    </div>
+                    <div>
+                        <p>Russian</p>
+                        <p>Lorem ipsum, dolor sit amet.</p>
+                        <p>Lorem ipsum, dolor sit amet.</p>
+                        <p>Lorem ipsum, dolor sit amet.</p>
+                        <p>Lorem ipsum, dolor sit amet.</p>
+
+                    </div>
+                    <div>
+                        <p>Russian</p>
+                        <p>Lorem ipsum, dolor sit amet.</p>
+                        <p>Lorem ipsum, dolor sit amet.</p>
+                        <p>Lorem ipsum, dolor sit amet.</p>
+                        <p>Lorem ipsum, dolor sit amet.</p>
+
+                    </div>
+                    <div>
+                        <p>Russian</p>
+                        <p>Lorem ipsum, dolor sit amet.</p>
+                        <p>Lorem ipsum, dolor sit amet.</p>
+                        <p>Lorem ipsum, dolor sit amet.</p>
+                        <p>Lorem ipsum, dolor sit amet.</p>
+
+                    </div>
+                    <div>
+                        <p>Russian</p>
+                        <p>Lorem ipsum, dolor sit amet.</p>
+                        <p>Lorem ipsum, dolor sit amet.</p>
+                        <p>Lorem ipsum, dolor sit amet.</p>
+                        <p>Lorem ipsum, dolor sit amet.</p>
+
+                    </div>
+                    <div>
+                        <p>Russian</p>
+                        <p>Lorem ipsum, dolor sit amet.</p>
+                        <p>Lorem ipsum, dolor sit amet.</p>
+                        <p>Lorem ipsum, dolor sit amet.</p>
+                        <p>Lorem ipsum, dolor sit amet.</p>
+
+                    </div>
+                </div>
+            
+
+
+    </main>
+
+    <footer style="margin-top: 1500px;">
+        <div class="headerTop">
+            <div class="container">
+                <div class="clearfix">
+                    <div class="box box1">
+                        EXPLORE BBC
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="headerTop">
+            <div class="container">
+                <div class="clearfix">
+                    <div class="box box1">
+                        We've updated our Privacy and Cookies Policy
+                    </div>
+
+                    <div class="box box2">
+                        We've made some important changes to our Privacy and Cookies Policy and we want you to know what this means for you and your data.
+                    </div>
+
+                    <div class="box box3 ">
+                        <div><i class="fa fa-check" aria-hidden="true"></i> OK</div>
+                        <div style="padding-top: 10px;"><i class="fa fa-cog" aria-hidden="true"></i>
+                        Find out what's changed</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+    </footer>
 </body>
 </html>

@@ -1,0 +1,59 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+ul, ol{
+	list-style: none;
+}
+.card{
+	width: 30%;
+	background-color: #c8c8c845;
+	position: relative;
+}
+.card-header img{
+	width: 100%;
+}
+.card-body{
+	background-color: #c8c8c8;
+	position: absolute;
+	top: 100%;
+	transition: top 1s ease-in;
+	z-index: 99;
+}
+.card-body h5{
+	font-size: 20px;
+	color: blue;
+}
+.card:hover .card-body{
+	/*top: 0;*/
+}
+
+.card-an{
+	background-color: #c8c8c845;
+	position: absolute;
+	top: 100%;
+	transition: top 1s ease-in;
+	z-index: 9;
+}
+.card:hover .card-an{
+	top:0;
+	bottom: 0;
+	background-color: rgba(255,0,0,0.3);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

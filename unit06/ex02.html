@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.myDiv1{
+			width: 100px;
+			height: 100px;
+			background: red;
+			position: relative;
+			animation-name: changeColor ;
+			animation-duration: 3s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+			animation-direction: alternate;
+
+		}
+
+		.myDiv2{
+			width: 100px;
+			height: 100px ;
+			background-color: gold ;
+			transition: width 3s, height 2s ;
+		}
+
+		.myDiv2:hover{
+			width: 300px ;
+			height: 200px ;
+			background-color: coral;
+		}
+
+		.myDiv3{
+			width: 100px;
+			height: 200px;
+		}
+
+		.myDiv3:hover{
+/*			transform:rotateY(40deg);
+*/			transform: scale3d(2,3); 
+		}
+
+		.myDiv4{
+			width: 200px;
+			height: 200px;
+			box-shadow: 5px 5px 9px 5px crimson ;
+			background-color: rgba(0,0,253,0.05);
+		}
+
+		p{
+			font-family: freestyle script;
+
+			font-size: 40px;
+			text-shadow: 5px 5px 5px purple ;
+		}
+
+		@keyframes changeColor {
+			from{
+				background-color: crimson ;
+				left: 0;
+			}
+
+			to {
+				background-color: darksalmon;
+				left: 300px;
+			}
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="myDiv1"></div>
+
+	<div class="myDiv2"></div>
+	<div class="myDiv3"></div>
+
+	<p>Hello</p>
+	<div class="myDiv4"></div>
+</body>
+</html>
