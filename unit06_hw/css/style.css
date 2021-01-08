@@ -441,8 +441,54 @@ footer audio{
   border-radius: 5px;
 }
 
+@media all and (min-width: 701px) and (max-width: 810px){
+  #tw{
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    display: block;
+    height: 15px;
+    width: 10px;
+    font-size: 15px;
+    color: #3E9B8F;
+    
+    
+  }
 
-@media all and (max-width: 700px){
+  #fo{
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    display: block;
+    height: 15px;
+    width: 10px;
+    font-size: 15px;
+    color: #3E9B8F;
+    
+    
+  }
+  #ze{
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    display: block;
+    height: 15px;
+    width: 10px;
+    font-size: 15px;
+    color: #3E9B8F;
+    
+    
+  }
+  #fb{
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    display: block;
+    height: 15px;
+    width: 10px;
+    font-size: 15px;
+    color: #3E9B8F;
+
+    
+  }
+}
+@media all and (min-width: 481px) and (max-width: 700px){
     .ulX{
     display: flex;
     width: 100%;
@@ -492,9 +538,9 @@ footer audio{
     transition-duration: 0.5s;
     transition-timing-function: linear;
     display: block;
-    height: 24px;
-    width: 24px;
-    font-size: 24px;
+    height: 48px;
+    width: 48px;
+    font-size: 48px;
     color: #3E9B8F;
     
     
@@ -504,20 +550,20 @@ footer audio{
     transition-duration: 0.5s;
     transition-timing-function: linear;
     display: block;
-    height: 24px;
-    width: 24px;
-    font-size: 24px;
-    color: #3E9B8F;
+    height: 48px;
     
+    font-size: 48px;
+    color: #3E9B8F;
+    width: 48px;
     
   }
   #ze{
     transition-duration: 0.5s;
     transition-timing-function: linear;
     display: block;
-    height: 24px;
-    width: 24px;
-    font-size: 24px;
+    height: 48px;
+    width: 48px;
+    font-size: 48px;
     color: #3E9B8F;
     
     
@@ -526,11 +572,10 @@ footer audio{
     transition-duration: 0.5s;
     transition-timing-function: linear;
     display: block;
-    height: 24px;
-    width: 24px;
-    font-size: 24px;
+    height: 48px;
+    width: 48px;
+    font-size: 48px;
     color: #3E9B8F;
-
     
   }
 
@@ -577,6 +622,7 @@ footer audio{
   }
   .aboutR{
     float: left;
+    width: 100%;
     margin-left: 0px;
   }
   .aboutR h3{
@@ -609,3 +655,138 @@ footer audio{
   
 }
 
+@media all and (min-width: 100px) and (max-width: 480px){
+  .ulX{
+    display: flex;
+    width: 100%;
+    height: 40%;
+    margin: auto;
+    max-width: 70%;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .liX {
+    font-size: 12px;
+    
+    padding: 20px 0px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    min-width: 10%;
+    margin: auto;
+  }
+
+  ul img{
+    height: 40%;
+    width: 40%;
+  }
+  .ss1{
+    background-color: #fcfbf7;
+    margin-top: -9% ;
+    padding-top: 0%;
+    margin-bottom: 5% ;
+  }
+  .info nav ul li{
+    float: left;
+    list-style: none;
+    width: 98%;
+    height: 330px;
+    margin-right: 2%;
+    margin-top: 20px;
+    overflow: hidden;
+    position: relative;
+    }
+
+
+    .about{
+    width: 100%;
+    overflow: auto;
+    background: white;
+  }
+  .aboutC{
+    margin: 0 auto;
+    width: 90%;
+    margin-top: 45px;
+    overflow: auto;
+    margin-bottom: 60px;
+  }
+  .aboutC h3:hover{
+    color: #358A7D;
+  }
+  .aboutL{
+
+    width: 100%;
+    float: left;
+  }
+  .aboutL h3{
+
+    color: #46B2A2;
+    font-size: 35px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+  .aboutL p{
+
+    font-size: 20px;
+    line-height: 29px;
+    margin-left: 10px;
+    color: #888;
+  }
+  .aboutL p a{
+    color: #46B2A2;
+  }
+  .aboutL p a:hover{
+    color: blue;
+  }
+  .aboutR{
+    float: left;
+    width: 100%;
+    margin-left: 0px;
+  }
+  .aboutR h3{
+
+    color: #46B2A2;
+    font-size: 35px;
+    margin: 0px;
+    margin-bottom: 20px;
+  }
+  .aboutR p{
+
+    margin: 0px;
+    font-size: 20px;
+    line-height: 29px;
+    color: #888;
+  }
+  .aboutR ul{
+
+    margin: 0px;
+    padding: 0px;
+    margin-top: 25px;
+  }
+  .aboutR ul li{
+    list-style: none;
+
+    margin-right: 25px;
+    float: left;
+  }
+
+  .text button{
+    width: 100%;
+    text-align: center;
+  }
+  button{
+  cursor: pointer;
+  background: linear-gradient(rgba(62,155,143,1),green);
+  background: rgba(62,155,143,1);
+  width: 100%;
+  height: 35px;
+  margin-bottom: 70px;
+  border-radius: 7px;
+}
+button:hover{
+  background: linear-gradient(green,rgba(62,155,143,1));
+  font-weight: bold;
+}
+}
