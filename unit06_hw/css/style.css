@@ -371,11 +371,11 @@ header nav ul li a:hover{
 footer{
   width: 100%;
   height: auto;
-  
+  background: #9accc5 repeat-x 0 0;
   overflow: auto;
 }
 footer form{
-  width: 80%;
+  width: 90%;
   overflow: auto;
   margin: 0 auto;
   color: white;
@@ -442,7 +442,7 @@ footer audio{
 }
 
 
-@media all and (max-width: 700){
+@media all and (max-width: 700px){
     .ulX{
     display: flex;
     width: 100%;
