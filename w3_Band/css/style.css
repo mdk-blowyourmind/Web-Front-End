@@ -1,0 +1,74 @@
+*{
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Helvetica;
+}
+/*
+1. Vi tri
+2. Kich thuoc
+3. Mau sac
+4. Kieu dang
+*/  
+
+.main{
+  
+}
+
+.header{
+  height: 46px;
+  background-color:#000;
+}
+
+#nav, .sub-nav{
+  list-style: none;
+}
+#nav > li{
+  display: block;
+  position:relative;
+}
+
+#nav li{
+  display: inline-block;
+  position:relative;
+}
+
+#nav li a{
+  
+  text-decoration:none;
+  line-height: 46px;
+  padding: 0 24px;
+  display: inline-block;
+}
+
+#nav > li >a{
+  color:#fff;
+  text-transform: uppercase;
+}
+
+#nav > li:hover > a,
+#nav .sub-nav li:hover{
+  color: #000;
+  background-color:#ccc;
+}
+
+#nav .sub-nav{
+  position:absolute;
+  background-color:#fff;
+}
+
+#nav .sub-nav a{
+  color: #000;
+}
+
+
+
+.slider{
+  min-height:500px;
+  background-color: #333;
+}
+
+
+.footer{
+  
+}

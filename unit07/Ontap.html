@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.box{
+			width: 25% ;
+			box-sizing: border-box;
+			background-color: gray;
+			float: left;
+			padding: 0 10px;
+		}
+
+		.box-image{
+			width: 100%;
+			position: relative;
+		}
+
+		.box-image img{
+			width: 100%;
+		}
+
+		.box-info{
+			width: 100%;
+			height: 100% ;
+			position: absolute;
+			bottom: 0;
+			background: rgba(255,255,255,0.3);
+			height: 0;
+			display: flex;
+			overflow: hidden;
+		}
+
+		.box-image:hover .box-info{
+			height: 100%;
+			transition: height 1s linear;
+			align-items: center;
+		}
+		.clear{
+			display: block;
+			clear: both;
+		}
+
+		@media all and (max-width: 768px) {
+			.box{
+				width: 50%;
+				margin-top: 10px;
+			}
+		}
+
+		@media all and (max-width: 510px) {
+			.box{
+				width: 100%;
+				margin-top: 10px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="box-image">
+			<img src="images/1.png" alt="">
+			<div class="box-info">
+			Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos quaerat, assumenda officia.
+		    </div>
+		</div>
+        
+        <div class="footer">
+        	<h1>ROBIN WILLIAMS</h1>
+        </div>
+		
+	</div>
+	<div class="box">
+		<div class="box-image">
+			<img src="images/1.png" alt="">
+			<div class="box-info">
+			Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos quaerat, assumenda officia.
+		    </div>
+		</div>
+        
+        <div class="footer">
+        	<h1>ROBIN WILLIAMS</h1>
+        </div>
+		
+	</div>
+	<div class="box">
+		<div class="box-image">
+			<img src="images/1.png" alt="">
+			<div class="box-info">
+			Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos quaerat, assumenda officia.
+		    </div>
+		</div>
+        
+        <div class="footer">
+        	<h1>ROBIN WILLIAMS</h1>
+        </div>
+		
+	</div>
+	<div class="box">
+		<div class="box-image">
+			<img src="images/1.png" alt="">
+			<div class="box-info">
+			Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos quaerat, assumenda officia.
+		    </div>
+		</div>
+        
+        <div class="footer">
+        	<h1>ROBIN WILLIAMS</h1>
+        </div>
+		
+	</div>
+	<div class="clear">
+			
+		</div>
+</body>
+</html>
