@@ -4,6 +4,16 @@
   box-sizing: border-box;
   font-family: Helvetica;
   font-size: 20px;
+
+}
+body{
+	width: 100%;
+	background-color: white;
+}
+div:after{
+	content: '';
+	display: block;
+	clear: both;
 }
 ul,li {
 	list-style: none;
@@ -13,25 +23,27 @@ header{
 	width: 100% ;
 	height: 700px ;
 	background-size: 100% 100% ;
+
 }
 a{
 	text-decoration:none;
 	color: black;
 }
 a:hover{
-	color: crimson ;
+	color: #4051e6 ;
 }
 
 .container{
-	width: 90%;
+	width: 80%;
 	margin: 0 auto;
 	padding-top: 10px;
 	position: relative;
+	padding-bottom: 50px;
 }
 .t1{
 	position: absolute;
 	font-weight: 600;
-	color: #0b85db;
+	color: #4051e6;
 	font-size: 30px;
 }
 .t2{
@@ -46,14 +58,360 @@ a:hover{
 }
 
 .t3{
-	position: absolute;
-	top: 50%;
+	
+	padding-top: 25%;
 
 }
 .t3 h1{
-	font-size: 500%;
+	font-size: 400%;
+	font-weight: 500;
 }
 .t3 p{
 	padding: 1px;
 	border-right: 1px solid black;
+	width: 21%;
+	letter-spacing: 5px;
+}
+
+.info1 p{
+	margin-top: 10px;
+	margin-bottom: 20px;
+	text-align: justify;
+}
+
+.sec1{
+	display: grid;
+	grid-template-columns: auto 40%;
+	padding: 0px;
+	margin-top: 10%;
+	grid-gap: 30px;
+}
+
+.info1-anh img{
+	border: 1px white solid;
+	box-shadow: 0px 0px 5px 0px;
+	width: 100%;
+}
+
+.download{
+	width: 170px;
+	padding: 20px;
+	margin-top: 30px;
+	border-radius: 30px;
+	background-color: #4051e6;
+	color: white;
+	text-align: center;
+}
+
+.sec2{
+	background-color: rgba(64, 81, 230,0.05);
+	height: 500px;
+	width: 100%;
+	box-shadow: 0px 5px 20px 0px rgba(64, 81, 230,0.5);
+}
+
+.skills{
+	max-width: 300px;
+	position: relative;
+	color: #d8daed;
+	font-size: 400%;
+	font-weight: 900;
+	position: relative; 
+	top: 50px;
+	left: 470px;
+  	margin-bottom: 40px;
+
+}
+.my-skills{
+	position: absolute;
+	color: black;
+	max-width: 300px;
+	font-weight: 800;
+	font-size: 42%;
+
+	top: 42px;
+	left: 15px;
+}
+
+.kn{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	padding: 0px;
+  	grid-gap:20px;
+  	margin-top: 130px;
+}
+
+
+
+
+.skill {
+        margin-bottom: 40px;
+        position: relative;
+      overflow-x:hidden;
+      
+    }
+    .skill > p {
+        font-size: 18px;
+        font-weight: 600;
+        color: #1a1716;
+        margin: 0;
+    }
+    .skill:before{
+        width: 100%;
+        height: 10px;
+        content: "";
+        display: block;
+        position: absolute;
+        background: #d9dede;
+        bottom: 0;
+
+        border-radius: 10px;
+    }
+    .skill-bar {
+        width: 100%;
+        height: 10px;
+        background:#4051e6;
+        display: block;
+        position: relative;
+        border-radius: 10px;
+    }
+
+    .skill1{
+        width: 97%;
+      
+    }
+    .skill-bar span{
+        position: absolute;
+        border-top: 5px solid #f4392f;
+        top: -30px;
+        padding: 0;
+        font-size: 18px;
+        padding: 3px 0;
+        font-weight: 500;
+    }
+    .skill-bar {
+        position: relative;
+      
+    }
+    .skill1 .skill-count1 {
+        right: 0;
+    }
+
+    .skill2{
+        width: 88%;
+    }
+
+    .skill2 .skill-count2 {
+        right: 0;
+    }
+    /* SKILL 3 */
+    .skill3{
+        width: 92%;
+    }
+    .skill3 .skill-count3 {
+        right: 0;
+    }
+
+    /* SKILL 4 */
+    .skill4{
+        width: 91%
+    }
+
+    .skill4 .skill-count4 {
+        right: 0;
+    }
+
+    /* SKILL 5 */
+    .skill5{
+        width: 93%;
+    }
+
+    .skill5 .skill-count5 {
+        right: 0;
+    }
+
+    /* SKILL 6 */
+    .skill6{
+        width: 83%
+    }
+
+    .skill6 .skill-count6 {
+        right: 0;
+    }
+
+
+    .services{
+	
+	color: #d8daed;
+	font-size: 400%;
+	font-weight: 900;
+	position: relative; 
+	top: 50px;
+	left: 430px;
+  	margin-bottom: 40px;
+  	max-width: 300px;
+
+}
+.my-services{
+	width: 500px;
+	position: absolute;
+	color: black;
+	max-width: 300px;
+	font-weight: 800;
+	font-size: 42%;
+
+	top: 42px;
+	left: 60px;
+}
+
+.grid-container2{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	padding: 0px;
+	grid-gap: 40px;
+}
+
+.grid-item2 {
+  margin-top: 40px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 5px 20px 0px rgba(64, 81, 230,0.5);
+  border: 0px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  text-align: center;
+  line-height: 40px;
+  background-color: rgba(64, 81, 230,0.05);
+}
+
+.grid-item2 i{
+	font-size: 60px;
+	color: #4051e6;
+
+}
+
+
+
+.sec4{
+	background-color: rgba(64, 81, 230,0.05);
+  box-shadow: 0px 5px 20px 0px rgba(64, 81, 230,0.5);
+}
+.grid-container3{
+	display: grid;
+	grid-template-columns: 24% 24% 24% auto;
+	padding: 0px;
+	grid-gap: 20px; 
+}
+
+.grid-item3{
+	margin-top: 40px;
+	border: 1px #4051e6 dotted;
+	padding: 20px;
+  	text-align: center;
+  	line-height: 40px;
+}
+
+.grid-item3 i{
+	font-size: 50px;
+	color: #4051e6;
+
+}
+
+.works{
+	
+	color: #d8daed;
+	font-size: 400%;
+	font-weight: 900;
+	position: relative; 
+	top: 50px;
+	left: 630px;
+  	margin-bottom: 40px;
+  	max-width: 300px;
+
+}
+.recent-works{
+	width: 500px;
+	position: absolute;
+	color: black;
+	max-width: 300px;
+	font-weight: 800;
+	font-size: 42%;
+
+	top: 42px;
+	left: -5px;
+}
+
+.thungChua{
+	width: 100%;
+	margin: auto;
+  	width: 40%;
+	padding-top: 40px;
+	padding-left: 20px;
+	margin-bottom: 20px;
+}
+
+.containerX{
+	width: 98%;
+	margin: 0 auto;
+	padding-top: 10px;
+	position: relative;
+	padding-bottom: 50px;
+}
+
+.grid-container5 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 0px;
+}
+
+.grid-item5 {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 0px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  background-size: 100% 100%;
+  height: 400px;
+}
+
+
+
+.clients{
+	
+	color: #d8daed;
+	font-size: 400%;
+	font-weight: 900;
+	position: relative; 
+	top: 50px;
+	left: 440px;
+  	margin-bottom: 40px;
+  	max-width: 300px;
+
+}
+.client-says{
+	width: 500px;
+	position: absolute;
+	color: black;
+	max-width: 300px;
+	font-weight: 800;
+	font-size: 42%;
+
+	top: 42px;
+	left: 30px;
+}
+
+.grid-container6{
+  display: grid;
+  grid-template-columns: auto auto;
+  
+  padding: 0px;
+  grid-gap:40px;
+}
+
+.grid-item6 img{
+	display: inline-block;
+	width: 50%;
+	height: 50%;
+}
+.grid-item6 i{
+	font-size: 30px;
+	color: #4051e6;
 }
