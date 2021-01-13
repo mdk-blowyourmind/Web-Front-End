@@ -347,20 +347,20 @@
 	  grid-gap: 0px;
 	  background-color: black;
 	  padding: 15px;
-	  border: 0px red solid;
+	  
 	  height: 35%;
 	}
 
 	.circle {
     background-color:red;
-    border:0px solid red;    
+     
     height:100px;
     border-radius:50%;
     -moz-border-radius:50%;
     -webkit-border-radius:50%;
     width:100px;
     color: white;
-    position: relative;
+    /*position: relative;*/
 }
 	
 	.grid-container5 {
@@ -428,17 +428,17 @@
 
 
 
-li:hover{
+/*li:hover{
 	color: crimson;
-}
+}*/
 
 
-p:hover{
+/*p:hover{
 		color: orange;
 	}
 
 
-
+*/
 
 
 
