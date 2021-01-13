@@ -632,3 +632,33 @@ a:hover{
 .centerX i{
 	color:  #4051e6;
 }
+
+@media all and (max-width: 768px){
+	.container{
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 10px;
+	position: relative;
+	padding-bottom: 50px;
+}
+	.t1{
+	position: absolute;
+	font-weight: 600;
+	color: #4051e6;
+	font-size: 20px;
+}
+.t2{
+	position: absolute;
+	right: 0;
+	
+}
+.nav li{
+	display: inline-block;
+	padding: 2px;
+	font-size: 50%;
+}
+.t3 h1{
+	font-size: 300%;
+	font-weight: 500;
+}
+}
