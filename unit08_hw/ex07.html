@@ -4,8 +4,77 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Bai 7</title>
+	<style>
+		*{
+			
+			
+		}
+	</style>
 </head>
 <body>
-	Bai 7
+	<script type="text/javascript">
+	
+	for(var i=0;i<7;i++) {
+		
+		for(var j=0;j<=i;j++) {
+			document.writeln(" * ");
+		}
+
+		
+		document.writeln("<br/>");
+	}
+
+	document.writeln("<br/>");
+	document.writeln("<br/>");
+
+	
+	for(var a = 1; a<=7;a++){
+		for(var b = 1; b<=7;b++){
+			
+				document.writeln(" * ");
+			
+			
+		}
+		document.writeln("<br/>");
+		
+	}
+
+	document.writeln("<br/>");
+	document.writeln("<br/>");
+
+
+	for(var a = 1; a<=7;a++){
+		for(var b = 1; b<=7;b++){
+			if(a==1 || a==7 || b==1 || b==7){
+				document.writeln(" * ");
+			}
+			else{
+				document.writeln("&nbsp;&nbsp;");
+			}
+		}
+		document.writeln("<br/>");
+		
+	}
+
+	document.writeln("<br/>");
+	document.writeln("<br/>");
+
+	for(var i = 0; i <= 7; i++ ) {
+		for(var j = 0; j < 7 - i; j++) {
+			document.writeln(" * ");
+		}
+		document.writeln("<br/>");
+	}
+
+	document.writeln("<br/>");
+	document.writeln("<br/>");
+
+
+
+	
+
+
+
+</script>
 </body>
 </html>

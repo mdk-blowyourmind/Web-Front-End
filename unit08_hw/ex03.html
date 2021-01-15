@@ -6,6 +6,26 @@
 	<title>Bai 3</title>
 </head>
 <body>
-	Bai 3
+	<script language="javascript">
+
+		do{
+			var n = parseInt(prompt('Nhập vào số nguyên dương n: '));
+		}while(n<1);
+		
+		
+		var tong = 0;
+		var giaiThua =1 ;
+
+		for (var i = 1;i<=n; i++) {
+			giaiThua = giaiThua * i;
+			tong = tong + i/(giaiThua);
+		}
+
+		document.write("Tong = ",tong);
+
+
+
+		
+	</script>
 </body>
 </html>

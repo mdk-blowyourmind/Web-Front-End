@@ -6,6 +6,39 @@
 	<title>Bai 4</title>
 </head>
 <body>
-	Bai 4
+	<script language="javascript">
+		do{
+			var n = parseInt(prompt('Nhập n: '));
+
+			var m = parseInt(prompt('Nhập m (m >= n): '));
+			
+		}while(n>m);
+
+		do{
+			var k = parseInt(prompt('Nhập k (k nằm trong khoảng từ n đến m): '));
+
+		}while((k<n) || (k>m));
+
+		var tong = 0;
+		var dem = 0;
+
+
+		for(var i = n; i<=m; i++){
+			if(i%k==0){
+				tong = tong + i;
+				dem = dem + 1;
+			}
+		}
+
+		document.write('Tổng các số chia hết cho ',k,' trong khoảng từ ',n,' đến ',m,' là: ',dem);
+
+		document.write("<br>");
+
+		document.write('Tổng của các phần tử chia hết cho ',k,' trong khoảng từ ',n,' đến ',m,' là: ',tong);
+
+
+
+		
+	</script>
 </body>
 </html>

@@ -6,6 +6,28 @@
 	<title>Bai 6</title>
 </head>
 <body>
-	Bai 6
+	<script language="javascript">
+		
+
+		document.write("Tổng của 10 số chẵn đầu tiên là: ");
+		document.write("<br>");
+
+		var tong = 0;
+		var dem = 0;
+
+		for(var i=0;i<=40;i++){
+			if(i%2==0){
+				tong = tong + i;
+				dem = dem + 1; 
+			}
+			if(dem==10){
+				break;
+			}
+		}
+		
+		document.write(tong);
+
+		
+	</script>
 </body>
 </html>

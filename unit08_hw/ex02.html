@@ -4,8 +4,29 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Bai 2</title>
+	<style>
+		*{
+			font-family: calibri;
+		}
+	</style>
 </head>
 <body>
-	Bai 2
+	<script language="javascript">
+		var n = parseInt(prompt('Nhập vào số nguyên n: '));
+		
+		var tong = 0;
+
+		var i =1;
+		do{
+			tong = tong + i;
+			i++ ;
+			
+			
+		}while(i<=n);
+
+		document.write("Tổng từ 1 đến ",n," là: ", tong)
+
+		
+	</script>
 </body>
 </html>
