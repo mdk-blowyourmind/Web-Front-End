@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ex03</title>
+</head>
+<body>
+	<form action="" name="frm">
+		<input type="text" id="ten" name="ten" value="Khanh Dang Cap">
+		<input type="email" name="email">
+
+		<input type="radio" name="gender" value="male">Nam
+		<input type="radio" name="gender" value="female">Nu
+		<input type="radio" name="gender" value="other">Khac
+
+		<input type="button" name="" id="myButton" onclick="testJs()" value="Submit" >
+	</form>
+
+	<script type="text/javascript">
+		function testJs(){
+			console.log(document.frm.ten.value);
+			console.log(document.frm.email.value);
+
+			for (var i = 0; i<document.frm.gender.length; i++) {
+				if (document.frm.gender[i].checked) {
+					console.log(document.frm.gender[i].value);
+				}
+			}
+		}
+	</script>
+</body>
+
+</html>

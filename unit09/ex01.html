@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+</head>
+<body>
+
+
+	<p id="hello">Hello World</p>
+
+	<span  class="textClass">Lorem ipsum dolor sit amet.</span>
+	<br>
+
+	<span id="khanhDangCap">dang Cap</span>
+
+	<p class="textClass">Lorem ipsum dolor sit, amet consectetur, adipisicing elit. Quis, inventore.</p>
+
+	<span id="textSpan" class="abcd dangCap">Day la text span</span>
+
+	<br>
+
+	<button id="bamTao" onclick="testJS()">Bấm tao đi</button>
+
+	<script type="text/javascript">
+		var myE = document.getElementById('hello');
+
+
+		console.log(myE);
+		console.log(document.getElementsByClassName('textClass'));
+
+		console.log(document.getElementsByClassName('textClass'));
+
+		console.log(document.getElementsByTagName('p'));
+
+		console.log(myE.innerHTML); //get
+		document.getElementById('textSpan').innerHTML = '<a href="">hahaha</a>';
+
+		document.getElementById('textSpan').className = 'abcdef';
+
+
+		var danhSachLop = document.getElementById('textSpan').className;
+		danhSachLop = danhSachLop + ' textSpanDangCap';
+		console.log(danhSachLop);
+		document.getElementById('textSpan').className = danhSachLop;
+
+
+		function testJS(){
+			document.getElementById('khanhDangCap').style.color = "crimson"
+		}
+
+
+
+	</script>
+</body>
+</html>
