@@ -7,9 +7,11 @@
 			* {
 				margin: 0;
 				padding: 0;
+				font-family: Helvetica;
+
 			}
 			body {
-				background: gray;
+				background: beige;
 				background-size: cover;
 			}
 			#content {
@@ -30,7 +32,7 @@
 				box-sizing: border-box;
 				cursor: pointer;
 				margin-right: 5px;
-				background: blue;
+				background: darkcyan;
 				float: left;
 				text-align: center;
 				font-weight: bold;
@@ -82,7 +84,7 @@
 				document.getElementById('content-tab2').style.display="block";
 				document.getElementById('content-tab3').style.display="none";
 				//xu ly mau nen
-				document.getElementById('btn-tab1').style.background="blue";
+				document.getElementById('btn-tab1').style.background="darkcyan";
 				document.getElementById('btn-tab3').style.background="";
 				//xu ly mau chu
 				document.getElementById('btn-tab1').style.color="white";
@@ -96,7 +98,7 @@
 				document.getElementById('content-tab2').style.display="none";
 				document.getElementById('content-tab3').style.display="block";
 				// xu ly mau nen
-				document.getElementById('btn-tab1').style.background="blue";
+				document.getElementById('btn-tab1').style.background="darkcyan";
 				document.getElementById('btn-tab2').style.background="";
 				//xu ly mau chu
 				document.getElementById('btn-tab1').style.color="white";
@@ -110,13 +112,13 @@
 		<div id="content">
 			<div class="tabs">
 				<div class="tab" id="btn-tab1" onclick="tab1(this)">
-					<h2>Tab1</h2>
+					<h2>Tab 1</h2>
 				</div>
 				<div class="tab" id="btn-tab2" onclick="tab2(this)">
-					<h2>Tab2</h2>
+					<h2>Tab 2</h2>
 				</div>
 				<div class="tab" id="btn-tab3" onclick="tab3(this)">
-					<h2>Tab3</h2>
+					<h2>Tab 3</h2>
 				</div>
 			</div>
 			<!-- content -->
@@ -134,11 +136,7 @@
 				<div id="content-tab2">
 					<h1>Section 2</h1>
 					<br/>
-					<p> Khi người dùng nhấp chuột vào nút Lớn hoặc Nhỏ sẽ tăng hoặc giảm cỡ chữ trên hình vẽ.
-					 Cuối cùng họ cũng có thể nhấn vào nút Mặc Định để trả cỡ chữ về giá trị ban đầu. 
-					 Chúng ta sẽ cho phép người dùng nhấp chuột nhiều lần vào nút, và mỗi lần nhấp cỡ chữ sẽ 
-					 tăng hoặc giảm dần lên. Ta sẽ cho tăng cỡ chữ lên 40% mỗi khi người dùng nhấp chuột vào 
-					 nút “Lớn” hoặc nhỏ đi 40% mỗi khi nhấp chuột vào nút “Nhỏ”..</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam earum atque repellat, cum nisi officiis error, ratione cupiditate, consequatur quo in fugiat incidunt vitae doloribus natus repellendus neque aliquam molestiae. Ipsum libero ipsa minima quidem officiis natus saepe minus dolorem, fugit sint id, dolor, eveniet. Adipisci assumenda dolore voluptatibus repudiandae id deserunt aut consequatur, ipsa voluptatem! Molestias, ipsum fugit excepturi!</p>
 				</div>
 				<div id="content-tab3">
 					<h1>Section 3</h1>
