@@ -1,16 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Bai 2</title>
-</head>
-<body>
-	<div class="container">
-		<form action="">
-			bai 2
+<html lang="vi">
+	<head>
+		<meta charset="utf-8">
+		<title>Câu 2</title>
+		<link rel="stylesheet" type="text/css" href="css/style02.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
+">
+	</head>
+	<body id="wrapper">
+		<form id="frm-register" onsubmit="submit()">
+			<div class="ip-frm-box">
+				<div class="frm-row">
+					<span class="frm-cell">Họ và Tên</span>
+					<input type="text" name="fullName" id="fullName" placeholder="Nhập họ tên...." class="frm-cell">
+					<i class="error fa fa-exclamation-circle" aria-hidden="true"></i>
+					<p class="error"></p>
+				</div>
+
+				<div class="frm-row">
+					<span class="frm-cell">Giới tính</span>
+					<input type="radio" name="sex" value="nam" id="sex">Nam
+					<input type="radio" name="sex" value="Nữ" id="sex">Nữ
+				</div>
+
+				<div class="frm-row">
+					<span class="frm-cell">Email</span>
+					<input type="text" name="mail" id="mail" placeholder="Nhập Email ..." class="frm-cell">
+					<i class="fa fa-exclamation-circle error" aria-hidden="true"></i>
+					<p class="error"></p>
+				</div>
+
+				<div class="frm-row">
+					<span class="frm-cell">Số điện thoại</span>
+					<input type="text" name="PhoneNumber" id="phoneNumb" placeholder="Nhập số điện thoại..." class="frm-cell">
+					<i class="fa fa-exclamation-circle error" aria-hidden="true"></i>
+					<p class="error"></p>
+				</div>
+
+				<div class="frm-row">
+					<span class="frm-cell">Mật khẩu</span>
+					<input type="password" name="password" id="pass" class="frm-cell">
+					<i class="fa fa-exclamation-circle error" aria-hidden="true"></i>
+					<p class="error"></p>
+				</div>
+
+				<div class="frm-row">
+					<span class="frm-cell">Xác nhận mật khẩu</span>
+					<input type="password" name="confirmPassword" id="confirmPass" class="frm-cell">
+					<i class="fa fa-exclamation-circle error" aria-hidden="true"></i>
+					<p class="error"></p>
+				</div>
+			</div>
+			
+			<div class="btn-frm-box">
+				<button id="btn-login" type="submit">Đăng ký <i class="fa fa-sign-in" aria-hidden="true"></i></button>
+			</div>
+			<div class="btn-frm-box">
+				<button type="reset" id="btn-reset">Xóa trắng <i class="fa fa-refresh" aria-hidden="true"></i></button>
+			</div>
 		</form>
-	</div>
-	<script type="text/javascript" src="js/js02.js"></script>
-</body>
+		<script type="text/javascript" src="js/js02.js"></script>
+	</body>
 </html>

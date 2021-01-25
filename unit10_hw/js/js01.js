@@ -1,49 +1,70 @@
+window.onload = function(){
+				document.getElementById('slide-show').addEventListener('mouseover', function() {
+					document.getElementById('prev').style.display="block";
+					document.getElementById('next').style.display="block";
+				});
+				document.getElementById('slide-show').addEventListener('mouseout', function() {
+					document.getElementById('prev').style.display="none";
+					document.getElementById('next').style.display="none";
+				});
 
-var arrImg = document.getElementsByTagName('img');
+				var imgSlide 	= document.getElementsByClassName("img-slide");
+				var prev 		= document.getElementById('prev');
+				var next		= document.getElementById('next');
+				var numbSide = 0;
 
-var arrSrcImg = [];
+				amimationSlide();
 
-for (var i = 0; i < arrImg.length; i++) {
-	arrSrcImg.push(arrImg[i].getAttribute('src'));
-}
+				// button
 
-var index = 0;
-arrImg[index].parentNode.style.display = "block";
+				prev.addEventListener('click', function() {
+					numbSide--;
+					showSlide();
+				});
 
-var btnPrev = document.getElementsByClassName('btn-prev')[0];
-var btnNext = document.getElementsByClassName('btn-next')[0];
+				next.addEventListener('click', function() {
+					numbSide++;
+					showSlide();
+				});
+				// end button
 
-btnPrev.addEventListener('click', fnPrev,false);
-btnNext.addEventListener('click', fnNext,false);
+				function amimationSlide() {
+					for(var i = 0; i < imgSlide.length; i++) {
+						imgSlide[i].style.display="none";
+					}
 
-function fnPrev(){
-	if (index==0) {
-		index = arrSrcImg.length -1 ;
-	}
-	else{
-		index --;
-	}
+					numbSide++;
+					if(numbSide < 0) {
+						numbSide = imgSlide.length - 1;
+					}
+					if(numbSide > imgSlide.length) {
+						numbSide = 1;
+					}
 
-	for (var i = 0; i < arrSrcImg.length; i++) {
-		arrImg[i].parentNode.style.display = 'none';
-	}
-	arrImg[index].parentNode.style.display = 'block';
-}
+					imgSlide[numbSide-1].style.display="block";
 
-function fnNext(){
-	if (index == arrSrcImg.length - 1) {
-		index = 0;
-	}
-	else{
-		index ++;
-	}
+					setTimeout(amimationSlide, 5000);
+				}
 
-	for (var i = 0; i < arrSrcImg.length; i++) {
-		arrImg[i].parentNode.style.display = 'none';
+				function showSlide() {
+					for(var i = 0; i < imgSlide.length; i++) {
+						imgSlide[i].style.display="none";
+					}
 
-	}
-	arrImg[index].parentNode.style.display = 'block';
-}
+					if(numbSide < 1) {
+						numbSide = imgSlide.length;
+					}
+					if(numbSide > imgSlide.length) {
+						numbSide = 1;
+					}
 
+					imgSlide[numbSide-1].style.display="block";
+				}
+			}
 
-// setInterval()
+			function elementSlide(n) {
+				for(var i = 0; i < document.getElementsByClassName("img-slide").length; i++) {
+					document.getElementsByClassName("img-slide")[i].style.display="none";
+				}
+				document.getElementsByClassName("img-slide")[n].style.display="block";
+			}
