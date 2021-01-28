@@ -1,0 +1,106 @@
+* {
+margin: 0;
+padding: 0;
+font-family: sans-serif;
+}
+
+#head {
+width: 100%;
+height: 60px;
+background: #2b3643;
+position: fixed;
+box-sizing: border-box;
+}
+#logo {
+width: 200px;
+height: 100%;
+
+margin: 0 auto;
+}
+#logo img {
+	height: 90%;
+	line-height: 60px;
+	max-width: 100%;
+	
+}
+#content {
+width: 100%;
+padding-top: 70px;
+padding-left: 10%;
+padding-right: 10%;
+box-sizing: border-box;
+}
+
+.form-advanced {	
+width: 100%;
+
+}
+#head-form-panel {
+display: grid;
+grid-template-columns: auto auto auto auto;
+background-color: #fff;
+grid-gap: 20px;
+margin-bottom: 10px;
+}
+.tab {
+
+box-sizing: border-box;
+
+margin-right: 0;
+background: #2184be;
+border-radius: 5px;
+cursor: pointer;
+
+background-color: rgba(255, 255, 255, 0.8);
+border: 1px solid rgba(0, 0, 0, 0.8);
+padding: 20px;
+font-size: 30px;
+text-align: center;
+
+}
+#content-form-panel {
+background: #ccc;
+padding: 10px;
+padding-bottom: 100px;
+border-radius: 4px;
+}
+fieldset {
+border: 0px;
+}
+legend {
+width: 100%;
+margin-bottom: 50px;
+font-size: 30px;
+font-weight: bold;
+border-bottom: 1px solid #e5e5e5;
+}
+fieldset label, input {
+display: block;
+margin-top: 5px;
+margin-bottom: 5px;
+}
+fieldset input {
+padding: 5px 5px;
+border:  1px solid #ccc;
+border-radius: 4px;
+}
+.frm {
+display: none;
+}
+.warning-content {
+display: none;
+}
+.btn-frm-advanced {
+margin-top: 10px;
+width: 100%;
+text-align: right;
+}
+.btn-frm-advanced button {
+margin-left: 5px;
+padding: 7px;
+font-size: 18px;
+background: #2184be;
+border: 1px solid #2184be;
+cursor: pointer;
+border-radius: 4px;
+}
