@@ -3,76 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sub menu</title>
-    <style type="text/css">
-        .menu {
-            list-style: none;
-            padding: 0;
-            background: pink;
-            display: inline-block;
-            position: relative;
-        }
-
-        .menu:after {
-            content: "";
-            display: block;
-            clear: both;
-        }
-        .menu>li {
-            float: left;
-            width: 100px;
-            padding: 10px;
-            border-left: 1px gray solid;
-            text-align: center;
-        }
-
-        .menu>li:first-child {
-            border-left: none;
-        }
-
-        .item:hover {
-            background: gray;
-            color: white;
-        }
-
-        .item:hover .sub-menu {
-            display: block;
-            color: blue;
-        }
-
-        .sub-menu {
-            list-style: none;
-            padding: 0;
-            position: absolute;
-            background: yellow;
-            width: 120px;
-            top: 100%;
-            display: none;
-        }
-
-        .sub-menu li {
-            padding: 10px 0;
-            border-bottom: 1px gray dotted;
-        }
-
-        .sub-menu li:last-child {
-            border: none;
-        }
-    </style>
+    <title>HTML</title>
 </head>
 <body>
-    <ul class="menu">
-        <li class="item">Menu 1</li>
-        <li class="item">Menu 2</li>
-        <li class="item">
-            Menu 3
-            <ul class="sub-menu">
-                <li>sub menu 1</li>
-                <li>sub menu 2</li>
-                <li>sub menu 3</li>
-            </ul>
-        </li>
-        <li class="item">Menu 4</li>
-    </ul>
+    
+
+    <div class="box"></div>
+
 </body>
+<script type="text/javascript" src="js/js01.js"></script>
 </html>
