@@ -21,7 +21,6 @@ margin: 0 auto;
 	height: 90%;
 	line-height: 60px;
 	max-width: 100%;
-	
 }
 #content {
 width: 100%;
@@ -56,7 +55,7 @@ border: 1px solid rgba(0, 0, 0, 0.8);
 padding: 20px;
 font-size: 30px;
 text-align: center;
-
+color: #fff;
 }
 #content-form-panel {
 background: #ccc;
@@ -104,3 +103,7 @@ border: 1px solid #2184be;
 cursor: pointer;
 border-radius: 4px;
 }
+#check{
+	display: inline-block;
+}
+
