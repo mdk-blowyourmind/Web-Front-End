@@ -271,6 +271,7 @@
         $(window).on("load",function(){
             $(document).scrollzipInit();
             $(document).rollerInit();
+            $(document).ready();
         });
         $(window).on("load scroll resize", function(){
             $('.numscroller').scrollzip({
