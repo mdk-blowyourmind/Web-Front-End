@@ -15,8 +15,10 @@
 
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" class="top">
+  <div style='position:fixed;top:0px;left:0px;width:0;height:0;' id='scrollzipPoint'></div>
 	<!-- Preloader-->
-  
+  <!-- <div id="progressbar"></div>
+  <div id="scrollPath"></div> -->
 
 	<!-- Navigation-->
     <nav class="navbar navbar-custom navbar-fixed-top">
@@ -34,16 +36,11 @@
           <ul class="nav navbar-nav navbar-left">
             <li class="hidden"><a href="#"></a></li>
             <li><a href="#">Home <i class="fa fa-angle-down"></i><span class="caret"></span></a>
-              <ul class="dropdown-menu columns-3">
+              <ul class="dropdown-menu">
                 <!-- <li><strong class="text-muted">Multi Page</strong></li> -->
                 <li><a href="#">image parallax</a></li>
                 <li><a href="#">image parallax 2</a></li>
-                
-                <!-- <li><strong class="text-muted">One Page</strong></li> -->
                 <li><a href="#">image parallax</a></li>
-                
-                <!-- <li><strong class="text-muted">Misc</strong></li> -->
-                
                 <li><a href="#">coming soon 3 <span class="label label-danger">new</span></a></li>
                 <li><a href="#" class="btn-nav"><span class="btn btn-white btn-sm">More Demos</span></a></li>
               </ul>
@@ -72,7 +69,7 @@
                 <li><a href="#"><i class="fa fa-plus-square-o fa-lg fa-fw"></i> Accordions</a></li>
               </ul>
             </li>
-            <li><a href="#">Portfolio <i class="fa fa-angle-down"></i><span class="caret"></span></a>
+            <li><a href="#">Hot <i class="fa fa-angle-down"></i><span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="#">Masonry <span class="angle-right"></span><span class="caret"></span></a>
                   <ul class="dropdown-menu">
@@ -115,7 +112,7 @@
               </ul>
             </li>
             <li class="menu-divider visible-lg">&nbsp;</li>
-            <li class="dropdown"><a href="#" class="dropdown-toggle"><i class="fa fa-search fa-lg"></i><span class="caret"></span></a>
+            <li class="dropdown"><a href="#" class="dropdown-toggle"><i style="color: #fff" class="fa fa-search fa-lg"></i><span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li>
                   <form method="post" class="search-form">
@@ -125,23 +122,9 @@
                 </li>
               </ul>
             </li>
-            <li class="dropdown"><a href="#" class="dropdown-toggle"><i class="fa fa-shopping-bag fa-lg"></i><span class="badge">3</span><span class="caret"></span></a>
-              <!-- <ul class="dropdown-menu">
-                <li class="shop-nav">
-                  <div class="shop-cart"><a href="shop-cart.html"><img src="img/shop/1.jpg" alt=" ">
-                      <div class="btn-border btn btn-xs">$128.99</div><i class="fa fa-times float-right"></i><br>Jacket with contrasting hood</a></div>
-                </li>
-                <li class="shop-nav">
-                  <div class="shop-cart"><a href="shop-cart.html"><img src="img/shop/2.jpg" alt=" ">
-                      <div class="btn-border btn btn-xs">$186.99</div><i class="fa fa-times float-right"></i><br>Jacket with a seam on the lapel</a></div>
-                </li>
-                <li class="shop-nav">
-                  <div class="shop-cart"><a href="shop-cart.html"><img src="img/shop/3.jpg" alt=" ">
-                      <div class="btn-border btn btn-xs">$98.99</div><i class="fa fa-times float-right"></i><br>Faux leather jacket</a></div><span class="text-left">Subtotal:</span><span class="float-right"><b>$386.99</b></span>
-                </li>
-                <li><a href="shop-cart.html"><span class="btn btn-white btn-sm">Checkout</span></a></li>
-              </ul>
- -->            </li>
+            <li class="dropdown"><a href="#" class="dropdown-toggle"><i style="color: #fff" class="fa fa-shopping-bag fa-lg"></i><span class="badge">3</span><span class="caret"></span></a>
+              
+          </li>
             <li class="dropdown"><a href="#" class="dropdown-toggle"><span class="lang">Eng</span><span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="#">English</a></li>
@@ -185,14 +168,14 @@
           </div>
         </div>
       </div>
-      <!-- Controls--><a href="#" data-slide="prev" class="left carousel-control"><span class="icon-prev"></span></a><a href="#" data-slide="next" class="right carousel-control"><span class="icon-next"></span></a>
+      <!-- Controls--><a href="#Carousel-intro" data-slide="prev" class="left carousel-control"><span class="icon-prev"></span></a><a href="#Carousel-intro" data-slide="next" class="right carousel-control"><span class="icon-next"></span></a>
     </header>
 
 
-    <!--+news("SEE ALL NEWS", 1, 3)-->
+    
     <!-- News Block-->
-    <section id="news">
-      <div class="container">
+    <section id="news" class="shadowXXX">
+      <div class="container ">
         <h3 class="pull-left">News</h3>
         <div class="pull-right">
           <h5><a href="#">SEE ALL NEWS</a></h5>
@@ -218,7 +201,7 @@
     
 
     <!-- Slider 2 Section-->
-    <section id="about-slider2" class="section-small bg-gray">
+    <section id="about-slider2" class="section-small bg-gray shadowXXY">
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
@@ -244,7 +227,7 @@
     </section>
 
     <!-- Services Section-->
-    <section id="services">
+    <section id="services" class="shadowXXX">
       <div class="container text-center">
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2">
@@ -274,24 +257,24 @@
     </section>
 
     <!-- Services 2 Section-->
-    <section class="section-small bg-img4 text-center">
+    <section class="section-small bg-img4 text-center shadowXXY">
       <div class="overlay"></div>
       <div class="container">
         <div class="row">
           <div data-wow-delay=".2s" class="col-lg-3 col-sm-6 wow fadeIn">
-            <h4><i class="icon icon-big icon ion-ios-infinite-outline"></i>LIFETIME UPDATES</h4>
+            <h4><i class="icon icon-big icon ion-ios-infinite-outline" style="color: #fff;"></i>LIFETIME UPDATES</h4>
             <p>Lorem ipsum dolor sit amet consecte tur adipiscingtitor diam</p>
           </div>
           <div data-wow-delay=".4s" class="col-lg-3 col-sm-6 wow fadeIn">
-            <h4><i class="icon icon-big ion-ios-stopwatch-outline"></i>LIGHTWEIGHT</h4>
+            <h4><i class="icon icon-big ion-ios-stopwatch-outline" style="color: #fff;"></i>LIGHTWEIGHT</h4>
             <p>Lorem ipsum dolor sit amet consecte tur adipiscingtitor diam</p>
           </div>
           <div data-wow-delay=".6s" class="col-lg-3 col-sm-6 wow fadeIn">
-            <h4><i class="icon icon-big ion-ios-monitor-outline"></i>RESPONSIVE</h4>
+            <h4><i style="color: #fff;" class="icon icon-big ion-ios-monitor-outline"></i>RESPONSIVE</h4>
             <p>Lorem ipsum dolor sit amet consecte tur adipiscingtitor diam</p>
           </div>
           <div data-wow-delay=".8s" class="col-lg-3 col-sm-6 wow fadeIn">
-            <h4><i class="icon icon-big ion-ios-settings"></i>MULTI-PURPOSE</h4>
+            <h4><i style="color: #fff;" class="icon icon-big ion-ios-settings"></i>MULTI-PURPOSE</h4>
             <p>Lorem ipsum dolor sit amet consecte tur adipiscingtitor diam</p>
           </div>
         </div>
@@ -299,7 +282,7 @@
     </section>
 
     <!-- Slider Section-->
-    <section id="about-slider">
+    <section id="about-slider" class="shadowXXX">
       <div class="container">
         <div class="row">
           <div class="col-lg-5">
@@ -325,7 +308,7 @@
     </section>
 
     <!-- Portfolio-->
-    <section id="portfolio" class="no-pad-btm">
+    <section id="portfolio" class="no-pad-btm bg-gray top5 shadowXXY">
       <div class="container text-center">
         <div class="row">
           <div class="col-sm-10 col-sm-offset-1">
@@ -373,14 +356,7 @@
                   </div>
                 </div></a></div>
           </div>
-          <!-- <div data-groups="[&quot;&quot;]" class="col-md-3 col-sm-6 no-pad">
-            <div class="portfolio-item"><a href="portfolio-single.html"><img src="img/portfolio/13.jpg" alt="">
-                <div class="portfolio-overlay">
-                  <div class="caption">
-                    <h5>Form Image Creative</h5><span>Lorem ipsum dolor sit amet</span>
-                  </div>
-                </div></a></div>
-          </div> -->
+          
           <div data-groups="[&quot;design&quot;, &quot;photo&quot;]" class="col-md-3 col-sm-6 no-pad">
             <div class="portfolio-item"><a href="#"><img src="img/portfolio/5.jpg" alt="">
                 <div class="portfolio-overlay">
@@ -416,7 +392,7 @@
         </div>
       </div>
     </section>
-    <section class="section-small action bg-gray">
+    <section class="section-small action bg-gray ">
       <div class="container">
         <div class="row">
           <div class="col-md-8">
@@ -429,7 +405,7 @@
 
     
     <!-- About Section-->
-    <section id="about">
+    <section id="about" class="shadowXXX">
       <div class="container wow fadeIn">
         <div class="row">
           <div class="col-lg-6">
@@ -453,28 +429,46 @@
       </div>
     </section>
 
-
-
-    <!-- Quotes-->
-    <section class="section-small bg-img3 text-center">
-      <div class="overlay"></div>
+    <section style="padding-top: 5%;padding-bottom: 5%" class="bg-dark wow fadeIn shadowXXY">
       <div class="container">
         <div class="row">
-          <div class="col-sm-8 col-sm-offset-2">
-            <p><i class="icon fa fa-quote-left fa-lg"></i></p>
-            <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro quasi autem tenetur dicta incidunt nam sapiente alias! Laboriosam, laudantium, minima, dolores tenetur distinctio eligendi molestias odio, eos nesciunt maxime fugiat!</h4>
-            <h2 class="no-pad classic">Bui Tuan Anh</h2>
+          <div data-wow-delay=".2s" class="col-md-5 wow fadeIn">
+            <h3 style="color: #fff">More About Us</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, consectetur, fugit aut obcaecati magni, eos dolor, nihil et hic quisquam quae pariatur? Omnis nam, animi impedit soluta, rerum suscipit velit.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, reiciendis. Amet perferendis, ratione tempore rem odio in dolore laudantium unde voluptatibus, officia veniam optio, libero iure reprehenderit, aliquam dicta commodi?</p><a href="#" target="_blank" class="btn btn-white btn-lg">LEARN MORE</a>
+          </div>
+          <div data-wow-delay=".4s" class="col-md-6 col-md-offset-1 wow fadeIn">
+            <div id="carousel-dark" data-ride="carousel" class="carousel slide carousel-fade">
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-dark" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-dark" data-slide-to="1"></li>
+                <li data-target="#carousel-dark" data-slide-to="2"></li>
+              </ol>
+              <div role="listbox" class="carousel-inner">
+                <div class="item active embed-responsive embed-responsive-16by9">
+                  <iframe src="https://player.vimeo.com/video/152614354?color=1c58ed&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0" width="600" height="338" allowfullscreen="" class="embed-responsive-item"></iframe>
+                </div>
+                <div class="item embed-responsive embed-responsive-16by9">
+                  <iframe src="https://player.vimeo.com/video/35396305?color=1c58ed&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0" width="600" height="338" allowfullscreen="" class="embed-responsive-item"></iframe>
+                </div>
+                <div class="item embed-responsive embed-responsive-16by9">
+                  <iframe src="https://player.vimeo.com/video/74350367?color=1c58ed&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0" width="600" height="338" allowfullscreen="" class="embed-responsive-item"></iframe>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
+    
     <!-- Team Section-->
-    <section id="team" class="bg-white text-center">
+    <section id="team" class="bg-white text-center shadowXXX">
       <div class="container">
         <h3>Our Team</h3>
         <div class="row">
           <div class="col-md-3 col-sm-6">
-            <h4>Lorem Ipsum</h4>
+            
             <p><img src="img/team/avatar5.jpg" alt="" class="img-responsive center-block"></p>
             <ul class="list-inline">
               <li><a href="#"><i class="fa fa-twitter fa-2x fa-fw"></i></a></li>
@@ -484,7 +478,7 @@
             <h5>CEO</h5>
           </div>
           <div class="col-md-3 col-sm-6">
-            <h4>Lorem Ipsum</h4>
+            
             <p><img src="img/team/avatar2.jpg" alt="" class="img-responsive center-block"></p>
             <ul class="list-inline">
               <li><a href="#"><i class="fa fa-twitter fa-2x fa-fw"></i></a></li>
@@ -494,7 +488,7 @@
             <h5>Manager</h5>
           </div>
           <div class="col-md-3 col-sm-6">
-            <h4>Lorem Ipsum</h4>
+            
             <p><img src="img/team/avatar3.jpg" alt="" class="img-responsive center-block"></p>
             <ul class="list-inline">
               <li><a href="#"><i class="fa fa-facebook fa-2x fa-fw"></i></a></li>
@@ -504,7 +498,7 @@
             <h5>Developer</h5>
           </div>
           <div class="col-md-3 col-sm-6">
-            <h4>Lorem Ipsum </h4>
+            
             <p><img src="img/team/avatar4.jpg" alt="" class="img-responsive center-block"></p>
             <ul class="list-inline">
               <li><a href="#"><i class="fa fa-twitter fa-2x fa-fw"></i></a></li>
@@ -517,7 +511,7 @@
       </div>
     </section>
     <!-- Facts section-->
-    <section class="facts section-small bg-img">
+    <section class="facts section-small bg-img shadowXXY">
       <div class="overlay"></div>
       <div class="container text-center">
         <div class="row">
@@ -537,7 +531,7 @@
       </div>
     </section>
     <!-- Services Section-->
-    <section>
+    <section class="shadowXXX">
       <div class="container text-center">
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2">
@@ -564,21 +558,9 @@
         </div>
       </div>
     </section>
-    <!-- Action video-->
-    <section class="section-small bg-img2 text-center">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-8 col-sm-offset-2"><a href="#" class="swipebox-video"><i class="icon icon-big ion-ios-play-outline"></i></a>
-            <h2>Watch <span class="bold">Video</span>
-            </h2>
-            <p>Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem consequuntur, sint natus nisi, officiis cupiditate porro velit ipsam modi! Vel!</p>
-          </div>
-        </div>
-      </div>
-    </section>
+    
     <!-- Testimonials Section-->
-    <section id="testimonials" class="bg-white">
+    <section id="testimonials" class="bg-white shadowXXY">
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-md-offset-3">
@@ -626,11 +608,11 @@
     </div> -->
     
     <!-- Contact Section-->
-    <section id="contact">
+    <section id="contact" class="shadowXXX">
       <div class="container">
         <div class="row">
           <div class="col-md-5">
-            <h2>contact us</h2>
+            <h2 style="color: rgba(0, 188, 212, 1);">contact us</h2>
             <p>Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Quo deserunt voluptatem accusamus, quia nam assumenda consectetur! Et voluptate laudantium, excepturi, inventore repudiandae id, quisquam a delectus doloribus itaque nisi temporibus..</p>
             <hr>
             <h5><i class="fa fa-map-marker fa-fw fa-lg"></i> Ha Noi
@@ -641,7 +623,7 @@
             </h5>
           </div>
           <div class="col-md-5 col-md-offset-2">
-            <h2>Say hello</h2>
+            <h2 style="color: rgba(0, 188, 212, 1);">Say hello</h2>
             <!-- Contact Form - Enter your email address on line 17 of the mail/contact_me.php file to make this form work. For more information on how to do this please visit the Docs!-->
             <form id="contactForm" name="sentMessage" novalidate="">
               <div class="control-group">
@@ -675,10 +657,67 @@
         </div>
       </div>
     </section>
+
+    <section class="shadowXXX">
+      <div class="container">
+        <div class="col-lg-8 col-lg-offset-2">
+            <h3 style="text-align: center;">FAQ?</h3>
+          </div>
+        <div class="row wow fadeIn">
+          <div class="col-md-8 col-md-offset-2">
+            <div id="accordion" role="tablist" aria-multiselectable="true" class="panel-group">
+              <div class="panel panel-default">
+                <div id="headingOne" role="tab" class="panel-heading">
+                  <h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">How do I Lorem ipsum dolor sit amet?</a></h4>
+                </div>
+                <div id="collapseOne" role="tabpanel" aria-labelledby="headingOne" class="panel-collapse collapse in">
+                  <div class="panel-body">Curabitur eu condimentum quam. Vivamus leo enim, vestibulum eu sapien eu, consectetur dignissim felis. Duis non enim malesuada, vehicula In et ultrices dui, posuere dignissim lacus. Duis leo nulla, iaculis nec erat eget, efficitur scelerisque massa. Aliquam vitae risus luctus, tempus dolor ut, interdum dolor. Maecenas consectetur elit vitae nibh pretium tincidunt. Nunc vitae orci risus. Mauris a diam venenatis, maximus felis nec, faucibus lacus. Ut vestibulum elementum rutrum. Nullam cursus in arcu at scelerisque. Quisque ex massa, vulputate sit amet ante sit amet, convallis euismod ipsum. Nunc sit amet mattis nulla. Nulla maximus quis magna nec sagittis. Cras nec ligula quis ante finibus consequat. Nulla sed posuere mi. Proin cursus efficitur lorem ac imperdiet. Curabitur fringilla massa ac mattis fermentum. Quisque faucibus blandit mi, porttitor vehicula urna aliquam at.</div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div id="headingTwo" role="tab" class="panel-heading">
+                  <h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" class="collapsed">How do I Lorem ipsum dolor sit amet?</a></h4>
+                </div>
+                <div id="collapseTwo" role="tabpanel" aria-labelledby="headingTwo" class="panel-collapse collapse">
+                  <div class="panel-body">Curabitur eu condimentum quam. Vivamus leo enim, vestibulum eu sapien eu, consectetur dignissim felis. Duis non enim malesuada, vehicula In et ultrices dui, posuere dignissim lacus. Duis leo nulla, iaculis nec erat eget, efficitur scelerisque massa. Aliquam vitae risus luctus, tempus dolor ut, interdum dolor. Maecenas consectetur elit vitae nibh pretium tincidunt. Nunc vitae orci risus. Mauris a diam venenatis, maximus felis nec, faucibus lacus. Ut vestibulum elementum rutrum. Nullam cursus in arcu at scelerisque. Quisque ex massa, vulputate sit amet ante sit amet, convallis euismod ipsum. Nunc sit amet mattis nulla. Nulla maximus quis magna nec sagittis. Cras nec ligula quis ante finibus consequat. Nulla sed posuere mi. Proin cursus efficitur lorem ac imperdiet. Curabitur fringilla massa ac mattis fermentum. Quisque faucibus blandit mi, porttitor vehicula urna aliquam at.</div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div id="headingThree" role="tab" class="panel-heading">
+                  <h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" class="collapsed">How do I Lorem ipsum dolor sit amet?</a></h4>
+                </div>
+                <div id="collapseThree" role="tabpanel" aria-labelledby="headingThree" class="panel-collapse collapse">
+                  <div class="panel-body">Curabitur eu condimentum quam. Vivamus leo enim, vestibulum eu sapien eu, consectetur dignissim felis. Duis non enim malesuada, vehicula In et ultrices dui, posuere dignissim lacus. Duis leo nulla, iaculis nec erat eget, efficitur scelerisque massa. Aliquam vitae risus luctus, tempus dolor ut, interdum dolor. Maecenas consectetur elit vitae nibh pretium tincidunt. Nunc vitae orci risus. Mauris a diam venenatis, maximus felis nec, faucibus lacus. Ut vestibulum elementum rutrum. Nullam cursus in arcu at scelerisque. Quisque ex massa, vulputate sit amet ante sit amet, convallis euismod ipsum. Nunc sit amet mattis nulla. Nulla maximus quis magna nec sagittis. Cras nec ligula quis ante finibus consequat. Nulla sed posuere mi. Proin cursus efficitur lorem ac imperdiet. Curabitur fringilla massa ac mattis fermentum. Quisque faucibus blandit mi, porttitor vehicula urna aliquam at.</div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div id="heading4" role="tab" class="panel-heading">
+                  <h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="collapse4" class="collapsed">How do I Lorem ipsum dolor sit amet?</a></h4>
+                </div>
+                <div id="collapse4" role="tabpanel" aria-labelledby="heading4" class="panel-collapse collapse">
+                  <div class="panel-body">Curabitur eu condimentum quam. Vivamus leo enim, vestibulum eu sapien eu, consectetur dignissim felis. Duis non enim malesuada, vehicula In et ultrices dui, posuere dignissim lacus. Duis leo nulla, iaculis nec erat eget, efficitur scelerisque massa. Aliquam vitae risus luctus, tempus dolor ut, interdum dolor. Maecenas consectetur elit vitae nibh pretium tincidunt. Nunc vitae orci risus. Mauris a diam venenatis, maximus felis nec, faucibus lacus. Ut vestibulum elementum rutrum. Nullam cursus in arcu at scelerisque. Quisque ex massa, vulputate sit amet ante sit amet, convallis euismod ipsum. Nunc sit amet mattis nulla. Nulla maximus quis magna nec sagittis. Cras nec ligula quis ante finibus consequat. Nulla sed posuere mi. Proin cursus efficitur lorem ac imperdiet. Curabitur fringilla massa ac mattis fermentum. Quisque faucibus blandit mi, porttitor vehicula urna aliquam at.</div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div id="heading5" role="tab" class="panel-heading">
+                  <h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="false" aria-controls="collapse5" class="collapsed">How do I Lorem ipsum dolor sit amet?</a></h4>
+                </div>
+                <div id="collapse5" role="tabpanel" aria-labelledby="heading5" class="panel-collapse collapse">
+                  <div class="panel-body">Curabitur eu condimentum quam. Vivamus leo enim, vestibulum eu sapien eu, consectetur dignissim felis. Duis non enim malesuada, vehicula In et ultrices dui, posuere dignissim lacus. Duis leo nulla, iaculis nec erat eget, efficitur scelerisque massa. Aliquam vitae risus luctus, tempus dolor ut, interdum dolor. Maecenas consectetur elit vitae nibh pretium tincidunt. Nunc vitae orci risus. Mauris a diam venenatis, maximus felis nec, faucibus lacus. Ut vestibulum elementum rutrum. Nullam cursus in arcu at scelerisque. Quisque ex massa, vulputate sit amet ante sit amet, convallis euismod ipsum. Nunc sit amet mattis nulla. Nulla maximus quis magna nec sagittis. Cras nec ligula quis ante finibus consequat. Nulla sed posuere mi. Proin cursus efficitur lorem ac imperdiet. Curabitur fringilla massa ac mattis fermentum. Quisque faucibus blandit mi, porttitor vehicula urna aliquam at.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Map Section-->
-    <div id="map">
+    
+      <div id="map" class="shadowXXY">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3109.2295954036604!2d105.77956206353376!3d21.0202117525759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab7a43a9d991%3A0x265c77911e0ccd82!2sVincom%20Plaza%20Skylake!5e0!3m2!1svi!2s!4v1614173956012!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
+    
+    
     <!-- Footer Section-->
     <section class="footer bg-gray">
       <div class="container">
@@ -710,14 +749,27 @@
           <div class="col-md-4">
             <p class="small">Lorem ipsum dolor, sit. <a href="#"><i class="fa fa-heart fa-fw"></i> Lorem</a>
             </p>
+           
           </div>
           <div class="col-md-3">
             <p class="small">&copy;Lorem ipsum dolor sit.</p>
+
           </div>
         </div>
       </div>
+      <div style="margin: 0 auto;position: relative; display: inline-block; float: right" class="scroll-btn hidden-xs wow fadeInDown">
+              <a href="#page-top"  class="page-scroll">
+                <span style="border: 2px solid rgb(0,188,212);" class="mouse">
+                  <span class="">
+                    <span>
+                      
+                    </span>
+                  </span>
+                </span>
+              </a>
+            </div>
     </section>
-
+    <script src="js/js.js"></script>
     <script src="js/jquery-1.12.3.min.js"></script>
     <!-- Bootstrap Core JavaScript-->
     <script src="js/bootstrap.min.js"></script>
@@ -740,6 +792,7 @@
     
     <!-- Custom Theme JavaScript-->
      <script src="js/style.js"></script>
+     
 </body>
 
 </html>

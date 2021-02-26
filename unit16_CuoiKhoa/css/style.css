@@ -25,6 +25,10 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.5;
   font-weight: 300; }
 
+  h3{
+    color: rgba(0, 188, 212,1);
+  }
+
 h5, h6 {
   margin: 0 0 20px;
   font-weight: 300; }
@@ -54,7 +58,7 @@ a, img, :focus, input {
   outline: none !important; }
 
 a:hover, a:focus {
-  color: #666;
+  color: #fadb02;
   text-decoration: none; }
 a img:hover {
   opacity: .7; }
@@ -64,7 +68,8 @@ a img:hover {
   margin: 0 !important; }
 
 .no-pad-btm {
-  padding-bottom: 0 !important; }
+  padding-bottom: 0 !important;
+   }
 
 .no-pad-top {
   padding-top: 0 !important; }
@@ -202,23 +207,27 @@ section, .section {
   opacity: 1; }
 
 a .fa, a .icon {
+  color: rgba(0, 188, 212,1);
   text-decoration: none;
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out; }
 
 .iconsmall {
+  color: rgba(0, 188, 212,1);
   font-size: 46px;
   float: left;
   line-height: 54px;
   padding-right: 10px; }
 
 .icon-big {
+  color: rgba(0, 188, 212,1);
   font-size: 80px;
   line-height: 120px;
   display: block; }
 
 header .icon-big {
+  color: rgba(0, 188, 212,1);
   line-height: 140px; }
 
 .classic {
@@ -321,7 +330,7 @@ a .fa {
       color: rgba(255,255,255,1); }
 
 .dropdown-menu {
-  background-color: rgba(0, 188, 212,1);
+  background-color: rgba(1, 1, 1,1);
   color: #ccc;
   min-width: 210px !important;
   right: 0;
@@ -765,7 +774,7 @@ a.btn-nav .btn {
   padding: 70px 0; }
 
 .intro-body:before {
-  background: rgba(0, 188, 212,1);
+  background: rgba(0, 0, 0, 0.6);
   content: "";
   left: 0;
   top: 0;
@@ -1046,6 +1055,7 @@ blockquote {
   border-bottom: 1px solid #ddd; }
 iframe{
   width: 100%;
+  height: 100%;
 }
 
 
@@ -1094,10 +1104,10 @@ iframe{
   width: 16px;
   height: 16px;
   margin: 0 5px 0;
-  background-color: #666;
+  background-color: #77eafc;
   border: 0; }
 .carousel-indicators .active {
-  background-color: #999; }
+  background-color: #14545e; }
 
 .carousel-control .icon-next, .carousel-control .icon-prev {
   font-family: sans-serif;
@@ -1263,6 +1273,7 @@ span.numscroller {
   color: #444; }
 
 /*  Portfolio  */
+
 .portfolio-sorting {
   text-transform: uppercase;
   margin-bottom: 48px; }
@@ -1586,3 +1597,69 @@ section.bg-dark .fa {
 
 .intro.demo h1 {
   font-size: 47px; }
+
+.top5{
+  padding-top: 5%;
+}
+
+.shadowXXX{
+  box-shadow: 0 16px 30px -8px rgba(0, 188, 212,0.5) inset;
+
+}
+.shadowXXY{
+  box-shadow: 0px 2px 30px 8px rgba(0, 188, 212,0.5) ;
+}
+
+/*::-webkit-scrollbar
+{
+  width:10;
+}
+#scrollPath{
+  position: fixed;
+  top:0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: rgba(255,255,255,0.05);
+}
+#progressbar{
+  position: fixed;
+  top:0;
+  right: 0;
+  width: 10px;
+  background: linear-gradient(to top, #008aff,#00ffe7 );
+  animation: animate 5s linear infinite;
+}
+@keyframes animate
+{
+  0%,100%
+  {
+    filter: hue-rotate(0deg);
+  }
+  50%
+  {
+    filter: hue-rotate(360deg);
+  }
+}
+#progressbar:before
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0 ;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #008aff,#00ffe7 );
+  filter: blur(40px);
+}
+#progressbar:after
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0 ;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #008aff,#00ffe7 );
+  filter: blur(40px);
+}*/

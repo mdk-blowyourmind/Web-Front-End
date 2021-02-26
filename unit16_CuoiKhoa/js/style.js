@@ -209,7 +209,7 @@
 
         $('.circle').circleProgress({
                 size:100,
-                fill: {color: "#777"},
+                fill: {color: "rgba(0, 188, 212,1)"},
                 startAngle: 300,
                 animation: {duration: 4000}
             })
@@ -269,9 +269,10 @@
          ***********************************************/
 
         $(window).on("load",function(){
+            $(document).ready();
             $(document).scrollzipInit();
             $(document).rollerInit();
-            $(document).ready();
+            
         });
         $(window).on("load scroll resize", function(){
             $('.numscroller').scrollzip({
@@ -293,6 +294,7 @@
             });
         };
         $.fn.scrollzip = function(options){
+
             var settings = $.extend({
                 showFunction    : null,
                 hideFunction    : null,
@@ -325,6 +327,7 @@
                 return this;
             });
         };
+
         function numberRoller(slno){
             var min=$('.roller-title-number-'+slno).attr('data-min');
             var max=$('.roller-title-number-'+slno).attr('data-max');
