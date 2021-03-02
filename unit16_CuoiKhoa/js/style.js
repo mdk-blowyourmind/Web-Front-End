@@ -111,11 +111,7 @@
             offset: 65
         })
 
-        /***********************************************
-         * Closes the Responsive Menu on Menu Item Click in One Page Nav
-         ***********************************************/
-
-        $('.navbar-onepage .navbar-collapse ul li a') .on('click', function() { $('.navbar-onepage .navbar-toggle:visible') .click(); });
+        
 
         /***********************************************
          * Active class to nav
@@ -193,29 +189,7 @@
 
         new WOW().init();
 
-        /***********************************************
-         * Circle Chart
-        ***********************************************/
-
-        var el = $('.circle'),
-            inited = false;
-        el.appear({ force_process: true });
-        el.on('appear', function() {
-            if (!inited) {
-                el.circleProgress();
-                inited = true;
-            }
-        });
-
-        $('.circle').circleProgress({
-                size:100,
-                fill: {color: "rgba(0, 188, 212,1)"},
-                startAngle: 300,
-                animation: {duration: 4000}
-            })
-            .on('circle-animation-progress', function (event, progress, stepValue) {
-                $(this).find('span').text((stepValue * 100).toFixed(1));
-            });
+        
 
         /***********************************************
          * Progress Bar
@@ -262,6 +236,36 @@
                 });
         });
 
+        /***********************************************
+         * Closes the Responsive Menu on Menu Item Click in One Page Nav
+         ***********************************************/
+
+        $('.navbar-onepage .navbar-collapse ul li a') .on('click', function() {
+         $('.navbar-onepage .navbar-toggle:visible') .click(); });
+
+        /***********************************************
+         * Circle Chart
+        ***********************************************/
+
+        var el = $('.circle'),
+            inited = false;
+        el.appear({ force_process: true });
+        el.on('appear', function() {
+            if (!inited) {
+                el.circleProgress();
+                inited = true;
+            }
+        });
+
+        $('.circle').circleProgress({
+                size:100,
+                fill: {color: "rgba(0, 188, 212,1)"},
+                startAngle: 300,
+                animation: {duration: 4000}
+            })
+            .on('circle-animation-progress', function (event, progress, stepValue) {
+                $(this).find('span').text((stepValue * 100).toFixed(1));
+            });
 
         /***********************************************
          *  jQuery Animate Number
